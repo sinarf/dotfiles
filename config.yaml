@@ -1,0 +1,19 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  workdir: ~/.config/dotfiles
+dotfiles:
+    #common config for any shell
+    d_shell:
+        dst: ~/.config/shell
+        src: config/shell
+profiles:
+    all:
+        #Common profile for all devices
+        dotfiles:
+        - d_shell
+    tina:
+        dotfiles:
+        - d_shell
