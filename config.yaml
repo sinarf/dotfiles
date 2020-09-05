@@ -5,7 +5,9 @@ config:
   dotpath: dotfiles
   workdir: ~/.config/dotfiles
 dotfiles:
-    #common config for any shell
+    d_i3:
+        dst: ~/.config/i3
+        src: config/i3
     d_shell:
         dst: ~/.config/shell
         src: config/shell
@@ -14,6 +16,10 @@ profiles:
         #Common profile for all devices
         dotfiles:
         - d_shell
+    linux:
+        # dot files for Linux install
+        dotfiles:
+        - d_i3
     tina:
         dotfiles:
         - d_shell

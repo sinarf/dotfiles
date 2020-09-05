@@ -1,0 +1,1 @@
+/home/sinarf/tmp/dotfiles/home/./.config/i3/scripts/battery.py
