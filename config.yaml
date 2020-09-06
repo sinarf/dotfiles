@@ -11,9 +11,13 @@ dotfiles:
     d_shell:
         dst: ~/.config/shell
         src: config/shell
+    d_fish:
+        dst: ~/.config/fish
+        src: config/fish
     f_tmux:
         dst: ~/.tmux.conf
         src: config/tmux.conf
+
 profiles:
     all:
         #Common profile for all devices
@@ -23,4 +27,5 @@ profiles:
         # dot files for Linux install
         dotfiles:
         - d_i3
+        - d_fish
         - f_tmux

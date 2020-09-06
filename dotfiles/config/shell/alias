@@ -1,1 +1,28 @@
-/home/sinarf/tmp/dotfiles/home/./.alias
+#
+# list of my bash aliases. 
+# 
+alias ls="ls --color"
+alias ll="ls -l"
+alias la="ls -a"
+alias grep="grep --color"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -iv"
+alias chmod="chmod -v"
+
+# launch gvim of get the existing instance 
+alias g="gvim --remote-silent"
+
+alias tm="tmux attach"
+alias todo-edit='g ~/Dropbox/todo/todo.txt'
+alias todo-today='todo.sh list @today'
+
+# todoist alias, needs the todoist command line tool
+alias t='todoist --color'
+
+# EDITOR
+export VISUAL='nvim-qt'
+export EDITOR='nvim'
+
+# dotdrop 
+alias dotdrop='/home/sinarf/.config/dotfiles/dotdrop.sh --cfg=/home/sinarf/.config/dotfiles/config.yaml'
