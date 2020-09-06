@@ -20,12 +20,16 @@ dotfiles:
     f_tmux:
         dst: ~/.tmux.conf
         src: config/tmux.conf
+    f_taskwarrior:
+        dst: ~/.taskrc
+        src: config/taskrc
 
 profiles:
     all:
         #Common profile for all devices
         dotfiles:
         - d_shell
+        - f_taskwarrior
     linux:
         # dot files for Linux install
         dotfiles:
