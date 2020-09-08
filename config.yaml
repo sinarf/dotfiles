@@ -5,6 +5,9 @@ config:
   dotpath: dotfiles
   workdir: ~/.config/dotfiles
 dotfiles:
+    d_bin:
+        dst: ~/bin
+        src: bin
     d_i3:
         dst: ~/.config/i3
         src: config/i3
@@ -33,6 +36,7 @@ profiles:
     linux:
         # dot files for Linux install
         dotfiles:
+        - d_bin
         - d_i3
         - d_fish
         - f_tmux
