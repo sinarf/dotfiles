@@ -22,12 +22,12 @@ Xcursor.theme: ArchCursorTheme
 ! ~/.config/gtk-3.0/settings.ini
 ! ~/.gtkrc-2.0
 
-URxvt.font: xft:Fantasque Sans Mono:size=15
+URxvt.font: xft:Cascadia Mono:size=10
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt*scrollBar: false
 !clickable urls
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common:  default,matcher,url-select,clipboard,fullscreen,resize-font
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
@@ -79,7 +79,7 @@ URxvt.color250: #d5c4a1
 ! -----------------------------------------------------------------------------
 
 ! hard contrast: *background: #1d2021
-*background: #282828
+*background: [80]#282828
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
 ! Black + DarkGrey
@@ -107,4 +107,16 @@ URxvt.color250: #d5c4a1
 *color7:  #a89984
 *color15: #ebdbb2
 
+!Extensions 
 
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+URxvt.keysym.F11: perl:fullscreen:switch
+
+URxvt.depth: 32
