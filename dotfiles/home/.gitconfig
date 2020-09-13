@@ -1,6 +1,6 @@
 [user]
-	name = sinarf
-	email = sinarf@sinarf.org
+	name = Michel Blavin
+	email = michel@blavin.fr
 [diff]
 	tool = nvimdiff
 [merge]
@@ -12,8 +12,8 @@
 [core]
 	excludesfile = ~/Sync/config/git/gitignore
 	editor = nvim
-;[url "https://"]
-	;insteadOf = git://
+[url "https://"]
+	insteadOf = git://
 [alias]
 	lg = log --word-diff  -p
 	l = log --oneline --abbrev-commit --all --graph --decorate --color
