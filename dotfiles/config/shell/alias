@@ -10,15 +10,7 @@ alias mv="mv -iv"
 alias rm="rm -iv"
 alias chmod="chmod -v"
 
-# launch gvim of get the existing instance 
-alias g="gvim --remote-silent"
-
 alias tm="tmux attach"
-alias todo-edit='g ~/Dropbox/todo/todo.txt'
-alias todo-today='todo.sh list @today'
-
-# todoist alias, needs the todoist command line tool
-alias t='todoist --color'
 
 # EDITOR
 export VISUAL='nvim-qt'
