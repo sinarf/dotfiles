@@ -8,9 +8,6 @@ dotfiles:
     d_bin:
         dst: ~/bin
         src: bin
-    d_home:
-        dst: ~/
-        src: home
     d_i3:
         dst: ~/.config/i3
         src: config/i3
@@ -29,6 +26,15 @@ dotfiles:
     f_taskwarrior:
         dst: ~/.taskrc
         src: config/taskrc
+    f_Xresources:
+        dst: ~/.Xresources
+        src: home/Xresources
+    f_yaourtrc:
+        dst: ~/.yaourtrc
+        src: home/yaourtrc
+    f_gitconfig:
+        dst: ~/.gitconfig
+        src: home/gitconfig
 
 profiles:
     all:
@@ -36,12 +42,15 @@ profiles:
         dotfiles:
         - d_shell
         - f_taskwarrior
+        - f_gitconfig
     linux:
         # dot files for Linux install
         dotfiles:
         - d_bin
-        - d_home
         - d_i3
         - d_fish
         - f_tmux
         - d_gtk3
+        - f_Xresources
+        - f_yaourtrc
+

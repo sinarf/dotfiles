@@ -22,7 +22,7 @@ Xcursor.theme: ArchCursorTheme
 ! ~/.config/gtk-3.0/settings.ini
 ! ~/.gtkrc-2.0
 
-URxvt.font: xft:Cascadia Mono:size=10
+URxvt.font: xft:Cascadia Code:size=10
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt*scrollBar: false
