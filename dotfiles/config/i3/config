@@ -459,6 +459,6 @@ mode "$mode_gaps_outer" {
 exec --no-startup-id ~/bin/alternating_layouts.py
 exec --no-startup-id syncthing -no-browser
 exec --no-startup-id guake
-exec --no-startup-id kupfer
+exec --no-startup-id albert
 exec --no-startup-id blueman-applet
 
