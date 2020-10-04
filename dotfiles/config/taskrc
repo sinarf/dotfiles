@@ -1,4 +1,4 @@
-# [Created by task 2.5.1 9/6/2020 13:10:45]
+#a [Created by task 2.5.1 9/6/2020 13:10:45]
 # Taskwarrior program configuration file.
 # For more documentation, see http://taskwarrior.org or try 'man task', 'man task-color',
 # 'man task-sync' or 'man taskrc'
@@ -13,15 +13,13 @@
 # Files
 data.location=~/.task
 
-# Synchronisation to inthe.am
+# syncrho
 taskd.certificate=~/.task/private.certificate.pem
 taskd.key=~/.task/private.key.pem
 taskd.ca=~/.task/ca.cert.pem
 taskd.server=taskwarrior.inthe.am:53589
 taskd.credentials=inthe_am/sinarf/bd46ef16-f606-47bb-8f26-97fc9b1f9557
 taskd.trust=ignore hostname
-
-
 
 # Color theme (uncomment one to use)
 #include /usr/share/doc/task/rc/light-16.theme
@@ -39,3 +37,7 @@ taskd.trust=ignore hostname
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
+regex=on
+uda.priority.values=H,M, ,L
+weekstart=monday
+xterm.title=yes

@@ -1,5 +1,5 @@
 config:
-  backup: true
+  backup: false
   banner: true
   create: true
   dotpath: dotfiles
@@ -24,7 +24,7 @@ dotfiles:
         dst: ~/.tmux.conf
         src: config/tmux.conf
     f_taskwarrior:
-        dst: ~/.taskrc
+        dst: ~/config/taskrc
         src: config/taskrc
     f_Xresources:
         dst: ~/.Xresources
