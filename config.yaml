@@ -24,7 +24,7 @@ dotfiles:
         dst: ~/.tmux.conf
         src: config/tmux.conf
     f_taskwarrior:
-        dst: ~/config/taskrc
+        dst: ~/.taskrc
         src: config/taskrc
     f_Xresources:
         dst: ~/.Xresources
@@ -32,6 +32,9 @@ dotfiles:
     f_yaourtrc:
         dst: ~/.yaourtrc
         src: home/yaourtrc
+    f_zshrc:
+        dst: ~/.zshrc
+        src: home/zshrc
     f_gitconfig:
         dst: ~/.gitconfig
         src: home/gitconfig
@@ -43,6 +46,7 @@ profiles:
         - d_shell
         - f_taskwarrior
         - f_gitconfig
+        - f_zshrc
     linux:
         # dot files for Linux install
         dotfiles:
