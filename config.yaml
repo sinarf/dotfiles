@@ -20,6 +20,9 @@ dotfiles:
     d_gtk3:
         dst: ~/.config/gtk-3.0
         src: config/gtk-3.0
+    d_albert:
+        dst: ~/.config/albert
+        src: config/albert
     f_tmux:
         dst: ~/.tmux.conf
         src: config/tmux.conf
