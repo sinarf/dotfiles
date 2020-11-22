@@ -215,6 +215,7 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [class="silos"] fullscreen enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -286,7 +287,7 @@ exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 # handles the lock screen
-exec --no-startup-id  xss-lock -- i3lock -i /home/sinarf/Sync/pics/background/arch2560x1440.png -b -f -t -d
+#exec --no-startup-id  xss-lock -- i3lock -i /home/sinarf/Sync/pics/background/arch2560x1440.png -b -f -t -d
 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -456,9 +457,13 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+
+assign [class="Steam"] $ws7
+assign [class="silos"] $ws4
+
 exec --no-startup-id ~/bin/alternating_layouts.py
 exec --no-startup-id syncthing -no-browser
 exec --no-startup-id guake
-exec --no-startup-id kupfer
+exec --no-startup-id albert
 exec --no-startup-id blueman-applet
 
