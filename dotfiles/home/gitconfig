@@ -1,6 +1,6 @@
 [user]
-	name = Michel Blavin
-	email = michel@blavin.fr
+	name = sinarf
+	email = sinarf@sinarf.org
 [diff]
 	tool = nvimdiff
 [merge]
@@ -25,3 +25,5 @@
 	user = sinarf
 [pull]
 	rebase = true
+[init]
+	defaultBranch = production
