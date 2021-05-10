@@ -28,7 +28,7 @@ font pango:Cascadia\ Code 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -469,4 +469,5 @@ exec --no-startup-id steam -silent
 exec --no-startup-id guake
 exec --no-startup-id albert
 exec --no-startup-id ~/bin/remap_capslock_to_escape.sh
+exec --no-startup-id kdeconnect-indicator
 
