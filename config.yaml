@@ -11,6 +11,9 @@ dotfiles:
     d_i3:
         dst: ~/.config/i3
         src: config/i3
+    d_i3status:
+        dst: ~/.config/i3status
+        src: config/i3status
     d_shell:
         dst: ~/.config/shell
         src: config/shell
@@ -59,6 +62,7 @@ profiles:
         dotfiles:
         - d_bin
         - d_i3
+        - d_i3status
         - d_fish
         - f_tmux
         - d_gtk3
