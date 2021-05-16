@@ -8,6 +8,9 @@ dotfiles:
     d_bin:
         dst: ~/bin
         src: bin
+    d_alacritty:
+        dst: ~/.config/alacritty
+        src: config/alacritty
     d_i3:
         dst: ~/.config/i3
         src: config/i3
@@ -61,6 +64,7 @@ profiles:
         # dot files for Linux install
         dotfiles:
         - d_bin
+        - d_alacritty
         - d_i3
         - d_i3status
         - d_fish
