@@ -1,9 +1,4 @@
 # Colors (Gruvbox dark)
-# @author sinarf
-#
-# Inpired from https://github.com/ChristianChiarulli/blog/blob/master/content/Linux/06-alacritty.md
-#
-# and gruvbox colors from: https://github.com/eendroroy/alacritty-theme/blob/master/themes/gruvbox_dark.yaml
 colors:
   # Default colors
   primary:
@@ -38,20 +33,20 @@ background_opacity: 0.8
 
 font:
   normal:
-    family: "Cascadia Code"
+    family: "Victor Mono"
     style: Regular
   bold:
-    family: "Cascadia Code"
+    family: "Victor Mono"
     style: Bold
   italic:
-    family: "Cascadia Code"
+    family: "Victor Mono"
     style: Italic
   bold_italic:
-    family: "Cascadia Code"
+    family: "Victor Mono"
     style: Bold Italic
 
   # Point size
-  size: 8.0
+  size: 12.0
 
   offset:
     x: 0
@@ -88,7 +83,3 @@ key_bindings:
   - { key: C, mods: Control|Shift, action: Copy }
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
-  - { key: Add, mods: Control, action: IncreaseFontSize }
-  - { key: Subtract, mods: Control, action: DecreaseFontSize }
-  - { key: Minus, mods: Control, action: DecreaseFontSize }
-  - { key: N, mods: Control, action: SpawnNewInstance }
