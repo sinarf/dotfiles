@@ -19,3 +19,4 @@ export PATH="$PATH:~/bin:/home/sinarf/.local/bin"
 export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 
+export TERMINAL=/usr/bin/alacritty
