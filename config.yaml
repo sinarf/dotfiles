@@ -29,6 +29,9 @@ dotfiles:
     d_gtk3:
         dst: ~/.config/gtk-3.0
         src: config/gtk-3.0
+    d_paru:
+        dst: ~/.config/rofi
+        src: config/rofi
     d_rofi:
         dst: ~/.config/rofi
         src: config/rofi
@@ -70,6 +73,7 @@ profiles:
         - d_fish
         - f_tmux
         - d_gtk3
+        - d_paru
         - d_rofi
         - f_Xresources
         - f_yaourtrc
