@@ -12,10 +12,12 @@
     ~/.gitconfig: gitconfig
     ~/.taskrc: taskrc
     ~/.zshrc: zshrc
+    ~/.Xresources: Xresources
+    #Add some launcher
+    ~/.local/share/applications/rofi-power-menu.desktop: local/share/applications/rofi-power-menu.desktop
     ~/bin:
         path: bin/
         create: true
-    ~/.Xresources: Xresources
     ~/.config/alacritty:
         path: config/alacritty/
         create: true
