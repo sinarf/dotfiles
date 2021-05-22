@@ -1,3 +1,0 @@
-#!/bin/sh
-echo enabling the printer...
-sudo cupsenable gutemberg
