@@ -1,55 +1,52 @@
-# This my dotbot config file
-# @author sinarf
-#
-# clean up old links
-- clean: ['~']
-
-#Create some default directory stucture
+---
+- clean:
+  - "~"
 - create:
-    - ~/dev
-    - ~/.local/share/vim/swap
-    - ~/.local/share/vim/backup
-    - ~/.local/share/vim/undo
-    - ~/.local/share/applications
-
+  - "~/dev"
+  - "~/.local/share/vim/swap"
+  - "~/.local/share/vim/backup"
+  - "~/.local/share/vim/undo"
+  - "~/.local/share/applications"
 - link:
-    ~/.tmux.conf: tmux.conf
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
-    ~/.gitconfig: gitconfig
-    ~/.taskrc: taskrc
-    ~/.zshrc: zshrc
-    ~/.Xresources: Xresources
-    #Add some launcher
-    ~/.local/share/applications/rofi-power-menu.desktop: local/share/applications/rofi-power-menu.desktop
+    ~/.tmux.conf: "tmux.conf"
+    ~/.bash_profile: "bash_profile"
+    ~/.bashrc: "bashrc"
+    ~/.bash_logout: "bash_logout"
+    ~/.gitconfig: "gitconfig"
+    ~/.taskrc: "taskrc"
+    ~/.zshrc: "zshrc"
+    ~/.Xresources: "Xresources"
+    ~/.local/share/applications/rofi-power-menu.desktop: "local/share/applications/rofi-power-menu.desktop"
     ~/bin:
-        path: bin/
-        create: true
+      path: "bin/"
+      create: true
     ~/.config/alacritty:
-        path: config/alacritty/
-        create: true
+      path: "config/alacritty/"
+      create: true
     ~/.config/gtk-3.0:
-        path: config/gtk-3.0/
-        create: true
+      path: "config/gtk-3.0/"
+      create: true
     ~/.config/i3:
-        path: config/i3/
-        create: true
+      path: "config/i3/"
+      create: true
     ~/.config/i3status:
-        path: config/i3status/
-        create: true
+      path: "config/i3status/"
+      create: true
     ~/.config/paru:
-        path: config/paru/
-        create: true
+      path: "config/paru/"
+      create: true
     ~/.config/powerline:
-        path: config/powerline/
-        create: true
+      path: "config/powerline/"
+      create: true
     ~/.config/rofi:
-        path: config/rofi/
-        create: true
+      path: "config/rofi/"
+      create: true
     ~/.config/shell:
-        path: config/shell/
-        create: true
-
+      path: "config/shell/"
+      create: true
+    /home/sinarf/.config/gtk-2.0:
+      /home/sinarf/.config/gtk-2.0: "/home/sinarf/.config/dotfiles"
+      create: true
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+  - - "git submodule update --init --recursive"
+    - "Installing submodules"
