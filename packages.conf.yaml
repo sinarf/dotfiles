@@ -1,6 +1,11 @@
 - paru:
     - nodejs
+    - python
+    - ruby
+    - groovy
     - yarn
     - git
     - acpi
     - alsa-utils
+    - network-manager-applet
+    - pavucontrol
