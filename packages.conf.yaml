@@ -2,3 +2,5 @@
     - nodejs
     - yarn
     - git
+    - acpi
+    - alsa-utils
