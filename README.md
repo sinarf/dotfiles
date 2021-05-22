@@ -1,4 +1,4 @@
 # dotfiles
 
-My dot files using [dotdrop](https://github.com/deadc0de6/dotdrop) tool.
+My dot files using [dotbot](https://github.com/anishathalye/dotbot) tool.
 
