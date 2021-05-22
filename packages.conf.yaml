@@ -1,0 +1,4 @@
+- paru:
+    - nodejs
+    - yarn
+    - git
