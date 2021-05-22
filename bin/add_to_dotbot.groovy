@@ -24,6 +24,7 @@ if (dotbotConfigFileFound)
     println "Dotbot config file found: $dotbotConfigFile.absolutePath"
 else{ 
     System.err.println("Config file $DOTBOT_CONFIG_FILE is not found in $dotfilesHome")
+    System.exit 2
 }
 def config = new YamlSlurper().parse(dotbotConfigFile)
 Map links = config.link[2]
