@@ -1,12 +1,47 @@
-- defaults:
-    link:
-      relink: true
-
+# This my dotbot config file
+# @author sinarf
+#
+# clean up old links
 - clean: ['~']
 
 - link:
     ~/.tmux.conf: tmux.conf
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.bash_logout: bash_logout
+    ~/.gitconfig: gitconfig
+    ~/.taskrc: taskrc
+    ~/.zshrc: zshrc
+    ~/bin:
+        path: bin/
+        create: true
+    ~/.Xresources: Xresources
+    ~/.config/alacritty:
+        path: config/alacritty/
+        create: true
+    ~/.config/gtk-3.0:
+        path: config/gtk-3.0/
+        create: true
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+    ~/.config/i3status:
+        path: config/i3status/
+        create: true
+    ~/.config/paru:
+        path: config/paru/
+        create: true
+    ~/.config/powerline:
+        path: config/powerline/
+        create: true
+    ~/.config/rofi:
+        path: config/rofi/
+        create: true
+    ~/.config/shell:
+        path: config/shell/
+        create: true
 
+#Create some default directory stucture
 - create:
     - ~/dev
     - ~/.local/share/vim/swap
