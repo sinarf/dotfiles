@@ -1,7 +1,7 @@
 #
 # list of my bash aliases. 
 # 
-alias ls="ls --color"
+alias ls=exa
 alias ll="ls -l"
 alias la="ls -a"
 alias grep="grep --color"
@@ -12,9 +12,3 @@ alias chmod="chmod -v"
 
 alias tm="tmux attach"
 
-# EDITOR
-export VISUAL='nvim-qt'
-export EDITOR='nvim'
-
-# dotdrop 
-alias dotdrop='/home/sinarf/.config/dotfiles/dotdrop.sh --cfg=/home/sinarf/.config/dotfiles/config.yaml'
