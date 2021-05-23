@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Errand lists
+Comment=Update errands lists
+TryExec=nvim
+Exec=nvim Sync/todo.txt/errand/Errands.lst
+Terminal=true
+Type=Application
+Keywords=Text;editor;
+Icon=nvim
+Categories=Utility;TextEditor;
+StartupNotify=false

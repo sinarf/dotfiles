@@ -17,6 +17,7 @@
     ~/.zshrc: "zshrc"
     ~/.Xresources: "Xresources"
     ~/.local/share/applications/rofi-power-menu.desktop: "local/share/applications/rofi-power-menu.desktop"
+    ~/.local/share/applications/ErrandList.desktop: "local/share/applications/ErrandList.desktop"
     ~/bin:
       path: "bin/"
       create: true
