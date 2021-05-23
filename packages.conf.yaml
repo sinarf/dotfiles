@@ -9,3 +9,4 @@
     - alsa-utils
     - network-manager-applet
     - pavucontrol
+    - ripgrep
