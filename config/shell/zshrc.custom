@@ -4,7 +4,7 @@
 #
 [ -f ~/.config/shell/alias ] && . ~/.config/shell/alias
 [ -f ~/.config/shell/profile ] && . ~/.config/shell/profile
-[ -f ~/.config/shell/fzf.zsh ] && . ~/.config/shell/fzf.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && . /usr/share/fzf/key-bindings.zsh
 
 # fortune
 command fortune -a | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -
