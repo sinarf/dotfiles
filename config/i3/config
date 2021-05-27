@@ -30,13 +30,15 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show combi
+bindsym Mod1+space exec --no-startup-id rofi -show combi
+# dropdowm terminal 
 bindsym $mod+z exec --no-startup-id tdrop -h 84% -x 3% -w 94% -y 8% -a alacritty
 
-# Start Applications
+# Print Screen features
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -421,13 +423,11 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Applications to be 
+# Applications that runs on startup.
+exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /home/sinarf/bin/alternating_layouts.py
 exec --no-startup-id steam -silent
-exec --no-startup-id guake
-#exec --no-startup-id ~/bin/remap_capslock_to_escape.sh
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id blueman-applet
 exec --no-startup-id signal-desktop -- %u --start-in-tray
-
 
