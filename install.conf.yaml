@@ -5,6 +5,7 @@
 - clean:
   - "~"
 - create:
+  - "~/bin"
   - "~/dev"
   - "~/.local/share/vim/swap"
   - "~/.local/share/vim/backup"

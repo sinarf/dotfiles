@@ -3,6 +3,8 @@
 set -e
 
 CONFIG="install.conf.yaml"
+HOST_SPECIFIC_CONFIG_FILE="${HOSTNAME}.conf.yml"
+
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
@@ -13,3 +15,9 @@ git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+
+if [ -f  "$HOST_SPECIFIC_CONFIG_FILE" ]
+then
+    echo "Specification configuration file ${HOST_SPECIFIC_CONFIG_FILE} found !"
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${HOST_SPECIFIC_CONFIG_FILE}" "${@}"
+fi
