@@ -18,9 +18,6 @@
     ~/.Xresources: "Xresources"
     ~/.local/share/applications/rofi-power-menu.desktop: "local/share/applications/rofi-power-menu.desktop"
     ~/.local/share/applications/ErrandList.desktop: "local/share/applications/ErrandList.desktop"
-    ~/bin:
-      path: "bin/"
-      create: true
     ~/.config/alacritty:
       path: "config/alacritty/"
       create: true
@@ -45,8 +42,8 @@
     ~/.config/shell:
       path: "config/shell/"
       create: true
-    /home/sinarf/.config/gtk-2.0:
-      /home/sinarf/.config/gtk-2.0: "/home/sinarf/.config/dotfiles"
+    ~/.config/gtk-2.0:
+      path: "config/gtk-2.0"
       create: true
 - shell:
   - - "git submodule update --init --recursive"

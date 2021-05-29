@@ -14,7 +14,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 
-export PATH="$PATH:~/bin:/home/sinarf/.local/bin"
+export PATH="$PATH:~/bin:~/.local/bin:~/.dotfiles/bin"
 # Adds ruby userdir to the PATH
 export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
