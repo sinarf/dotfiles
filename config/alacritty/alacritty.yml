@@ -29,20 +29,20 @@ colors:
     cyan:    '0x8ec07c'
     white:   '0xebdbb2'
 
-background_opacity: 0.98
+background_opacity: 0.9
 
 font:
   normal:
-    family: "Victor Mono"
+    family: "Cascadia Code"
     style: Regular
   bold:
-    family: "Victor Mono"
+    family: "Cascadia Code"
     style: Bold
   italic:
-    family: "Victor Mono"
+    family: "Cascadia Code"
     style: Italic
   bold_italic:
-    family: "Victor Mono"
+    family: "Cascadia Code"
     style: Bold Italic
 
   # Point size
