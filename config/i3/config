@@ -33,6 +33,7 @@ bindsym $mod+Shift+q kill
 bindsym Mod1+space exec --no-startup-id rofi -show combi
 # dropdowm terminal 
 bindsym $mod+z exec --no-startup-id ~/.dotfiles/bin/popup_terminal.sh
+bindsym Ctrl+Escape exec --no-startup-id ~/.dotfiles/bin/popup_terminal.sh
 
 # Print Screen features
 bindsym Print exec --no-startup-id i3-scrot
