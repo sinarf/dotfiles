@@ -1,4 +1,5 @@
 - paru:
+    - spaceship-prompt-git
     - nodejs
     - python
     - ruby

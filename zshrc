@@ -76,4 +76,7 @@ TRAPINT() {
 
 PROMPT='$THEME_PROMPT_PREFIX%f%B%F{240}%1~%f%b %(?.%F{green}$THEME_VI_MODE_SYMBOL.%F{red}$THEME_VI_MODE_SYMBOL) '
 
+autoload -U promptinit; promptinit
+prompt spaceship
+
 source ~/.config/shell/zshrc.custom
