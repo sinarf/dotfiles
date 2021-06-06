@@ -3,6 +3,14 @@
         {
             "color": "#0000ff",
             "path": "/home/sinarf/.thunderbird/d6bft25f.default-release/ImapMail/ssl0.ovh.net/INBOX.msf"
+        },
+        {
+            "color": "#0000ff",
+            "path": "/home/sinarf/.thunderbird/d6bft25f.default-release/ImapMail/127.0.0.1/INBOX.msf"
+        },
+        {
+            "color": "#0000ff",
+            "path": "/home/sinarf/.thunderbird/d6bft25f.default-release/ImapMail/mail.asr-informatique.fr/INBOX.msf"
         }
     ],
     "advanced/blinkingusealpha": false,
@@ -25,7 +33,7 @@
     "common/borderwidth": 0,
     "common/defaultcolor": "#0000ff",
     "common/exitthunderbirdonquit": false,
-    "common/forceIgnoreUnreadEmailsOnMinimize": false,
+    "common/forceIgnoreUnreadEmailsOnMinimize": true,
     "common/hidewhenminimized": true,
     "common/hidewhenrestarted": true,
     "common/hidewhenstarted": true,
