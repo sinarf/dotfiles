@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mastodon TUI
+Comment=Mastodon in the terminal with toot
+Exec=toot tui
+Terminal=true
+Type=Application
+Categories=web;
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Reddit TUI
+Comment=Reddit in the terminal with tuir
+Exec=tuir
+Terminal=true
+Type=Application
+Categories=web;
+
