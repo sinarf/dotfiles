@@ -1,4 +1,4 @@
--kk--
+---
 - defaults:
     link:
       relink: true
@@ -26,6 +26,8 @@
     ~/.local/share/applications/ErrandList.desktop: "local/share/applications/ErrandList.desktop"
     ~/.local/share/applications/taskwarrior-tui.desktop: "local/share/applications/taskwarrior-tui.desktop"
     ~/.local/share/applications/vit.desktop: "local/share/applications/vit.desktop"
+    ~/.local/share/applications/tuir.desktop: "local/share/applications/tuir.desktop"
+    ~/.local/share/applications/toot.desktop: "local/share/applications/toot.desktop"
     ~/.config/alacritty:
       path: "config/alacritty/"
       create: true
