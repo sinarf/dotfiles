@@ -282,44 +282,6 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-    i3bar_command i3bar
-        status_command i3status
-        position top
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#   tray_output primary
-#   tray_output eDP1
-
-        bindsym button4 nop
-        bindsym button5 nop
-        font pango:Victor\ Mono 12
-        strip_workspace_numbers yes
-
-        colors {
-#background #222D31
-#statusline #F9FAF9
-#separator  #454947
-
-#                      border  backgr. text
-#focused_workspace  #F9FAF9 #16a085 #292F34
-#active_workspace   #595B5B #353836 #FDF6E3
-#inactive_workspace #595B5B #222D31 #EEE8D5
-#binding_mode       #16a085 #2C2C2C #F9FAF9
-#urgent_workspace   #16a085 #FDF6E3 #E5201D
-# bar background color
-            background $bg
-# text color used for blocks that do not have a color specified.
-                statusline $yellow
-# workspaces section
-#                    border  backgr. text
-                focused_workspace    $aqua $aqua $darkgray
-                inactive_workspace   $darkgray $darkgray $yellow
-                active_workspace     $darkgray $darkgray $yellow
-                urgent_workspace     $red $red $bg
-        }
-}
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
@@ -424,6 +386,8 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # Applications that runs on startup.
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /home/sinarf/bin/alternating_layouts.py
@@ -431,5 +395,6 @@ exec --no-startup-id steam -silent
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id blueman-applet
 exec --no-startup-id signal-desktop -- %u --start-in-tray
+exec --no-startup-id protonmail-bridge --no-window
 exec --no-startup-id birdtray
 

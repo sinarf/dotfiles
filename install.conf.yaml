@@ -1,4 +1,4 @@
----
+-kk--
 - defaults:
     link:
       relink: true
@@ -40,6 +40,9 @@
       create: true
     ~/.config/paru:
       path: "config/paru/"
+      create: true
+    ~/.config/polybar:
+      path: "config/polybar/"
       create: true
     ~/.config/powerline:
       path: "config/powerline/"
