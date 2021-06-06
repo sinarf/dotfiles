@@ -397,4 +397,5 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id signal-desktop -- %u --start-in-tray
 exec --no-startup-id protonmail-bridge --no-window
 exec --no-startup-id birdtray
+exec --no-startup-id syncthingtray
 
