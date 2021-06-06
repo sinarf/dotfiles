@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=TaskWarrior TUI
+Comment=TaskWarrior terminal UI
+TryExec=taskwarrior-tui
+Exec=taskwarrior-tui
+Terminal=true
+Type=Application
+Keywords=Utils;
+Icon=taskwarrior
+Categories=Utility;Todo;
+StartupNotify=false
+

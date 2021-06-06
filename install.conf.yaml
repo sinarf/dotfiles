@@ -3,14 +3,14 @@
     link:
       relink: true
 - clean:
-  - "~"
+    - "~"
 - create:
-  - "~/bin"
-  - "~/dev"
-  - "~/.local/share/vim/swap"
-  - "~/.local/share/vim/backup"
-  - "~/.local/share/vim/undo"
-  - "~/.local/share/applications"
+    - "~/bin"
+    - "~/dev"
+    - "~/.local/share/vim/swap"
+    - "~/.local/share/vim/backup"
+    - "~/.local/share/vim/undo"
+    - "~/.local/share/applications"
 - link:
     ~/.tmux.conf: "tmux.conf"
     ~/.bash_profile: "bash_profile"
@@ -22,6 +22,7 @@
     ~/.Xresources: "Xresources"
     ~/.local/share/applications/rofi-power-menu.desktop: "local/share/applications/rofi-power-menu.desktop"
     ~/.local/share/applications/ErrandList.desktop: "local/share/applications/ErrandList.desktop"
+    ~/.local/share/applications/taskwarrior-tui.desktop: "local/share/applications/taskwarrior-tui.desktop"
     ~/.config/alacritty:
       path: "config/alacritty/"
       create: true
@@ -50,5 +51,5 @@
       path: "config/gtk-2.0"
       create: true
 - shell:
-  - - "git submodule update --init --recursive"
-    - "Installing submodules"
+    - - "git submodule update --init --recursive"
+      - "Installing submodules"
