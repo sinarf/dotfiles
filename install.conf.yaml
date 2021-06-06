@@ -20,6 +20,7 @@
     ~/.taskrc: "taskrc"
     ~/.zshrc: "zshrc"
     ~/.Xresources: "Xresources"
+    ~/.taskopenrc: "taskopenrc/taskopenrc"
     ~/.local/share/applications/rofi-power-menu.desktop: "local/share/applications/rofi-power-menu.desktop"
     ~/.local/share/applications/ErrandList.desktop: "local/share/applications/ErrandList.desktop"
     ~/.local/share/applications/taskwarrior-tui.desktop: "local/share/applications/taskwarrior-tui.desktop"
