@@ -1,13 +1,14 @@
 #!/usr/bin/env groovy
 
 import groovy.yaml.*
+
 /**
 * This script can be used to add file or directory to dotbot. 
 * The script does move the file or the directory to the dotbot 
 * @author sinarf
 */
 String HOME = System.getenv("HOME")
-final String DEFAULT_DOTFILES_HOME="$HOME/.config/dotfiles"
+final String DEFAULT_DOTFILES_HOME="$HOME/.dotfiles"
 final String DOTBOT_CONFIG_FILE="install.conf.yaml"
 
 if (args.length != 1){
@@ -27,8 +28,13 @@ else{
     System.exit 2
 }
 def config = new YamlSlurper().parse(dotbotConfigFile)
-Map links = config.link[2]
 
+// the object config.link contains a list of map where only one list is not null
+// so we choose that one.
+Map links = [:]
+config.link.each { currentMap ->
+     if (currentMap) links = currentMap
+} 
 
 File itemToAdd = new File(args[0])
 if (!itemToAdd.exists()) {
@@ -58,11 +64,11 @@ if (itemToAdd.directory){
         verbose: true,
         flatten: false,
         file:itemToAdd.absolutePath
-        ) 
-        Map value = [:]
-        value.put(itemToAdd.absolutePath, dotfilesHome)
-        value.put("create", true)
-        links.put(itemToAdd.absolutePath, value)
+    ) 
+    Map value = [:]
+    value.put(itemToAdd.absolutePath, dotfilesHome)
+    value.put("create", true)
+    links.put(itemToAdd.absolutePath, value)
     }
 else if (itemToAdd.file) {
     ant.move(
@@ -72,15 +78,14 @@ else if (itemToAdd.file) {
         verbose: true,
         flatten: false,
         file:itemToAdd.absolutePath
-        )
-        links.put(itemToAdd.absolutePath, "${targetDir}/${itemToAdd.name}")
-    } 
-else
-    throw IllegalArgumentException("$itemToAdd.absolutePath is not a file or a directory")  
+    )
+    links.put(itemToAdd.absolutePath, "${targetDir}/${itemToAdd.name}")
+}
+else throw IllegalArgumentException("$itemToAdd.absolutePath is not a file or a directory")  
 
 println "Updtating dotbot configuration"
 def configBuilder = new YamlBuilder()
 configBuilder.call config
 dotbotConfigFile.write(configBuilder.toString())
 
-println "Now you should run the installl script and commit your change"
+println "Now you should run the `./install` script and commit your change"
