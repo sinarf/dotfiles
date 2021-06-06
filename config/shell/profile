@@ -22,5 +22,5 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export TERMINAL=/usr/bin/alacritty
 
 # EDITOR
-export VISUAL='neovide'
+export VISUAL="$TERMINAL -e nvim"
 export EDITOR='nvim'
