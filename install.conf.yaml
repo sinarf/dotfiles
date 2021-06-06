@@ -21,6 +21,7 @@
     ~/.zshrc: "zshrc"
     ~/.Xresources: "Xresources"
     ~/.taskopenrc: "taskopenrc/taskopenrc"
+    ~/.config/birdtray-config.json: "config/birdtray-config.json"
     ~/.local/share/applications/rofi-power-menu.desktop: "local/share/applications/rofi-power-menu.desktop"
     ~/.local/share/applications/ErrandList.desktop: "local/share/applications/ErrandList.desktop"
     ~/.local/share/applications/taskwarrior-tui.desktop: "local/share/applications/taskwarrior-tui.desktop"
