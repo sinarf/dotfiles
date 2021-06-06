@@ -23,6 +23,7 @@
     ~/.local/share/applications/rofi-power-menu.desktop: "local/share/applications/rofi-power-menu.desktop"
     ~/.local/share/applications/ErrandList.desktop: "local/share/applications/ErrandList.desktop"
     ~/.local/share/applications/taskwarrior-tui.desktop: "local/share/applications/taskwarrior-tui.desktop"
+    ~/.local/share/applications/vit.desktop: "local/share/applications/vit.desktop"
     ~/.config/alacritty:
       path: "config/alacritty/"
       create: true

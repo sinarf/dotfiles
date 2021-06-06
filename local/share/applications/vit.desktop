@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=TaskWarrior vit CLI
+Comment=TaskWarrior terminal UI
+TryExec=vit
+Exec=vit
+Terminal=true
+Type=Application
+Keywords=Utils;
+Icon=taskwarrior
+Categories=Utility;Todo;
+StartupNotify=false
+
