@@ -25,3 +25,6 @@
     - polybar
     - siji
     - syncthingtray
+    - gvfs
+    - gvfs-smb
+    - gvfs-mtp
