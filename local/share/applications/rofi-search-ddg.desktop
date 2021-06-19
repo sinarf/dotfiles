@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DuckDuckGo Search
+Comment=Use rofi to search 
+Exec=rofi-search-ddg.sh
+Terminal=false
+Type=Application
+Categories=Utils;
+

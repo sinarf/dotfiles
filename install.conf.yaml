@@ -28,6 +28,7 @@
     ~/.local/share/applications/vit.desktop: "local/share/applications/vit.desktop"
     ~/.local/share/applications/tuir.desktop: "local/share/applications/tuir.desktop"
     ~/.local/share/applications/toot.desktop: "local/share/applications/toot.desktop"
+    ~/.local/share/applications/rofi-search-ddg.desktop: "local/share/applications/rofi-search-ddg.desktop"
     ~/.config/alacritty:
       path: "config/alacritty/"
       create: true
