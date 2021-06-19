@@ -4,7 +4,6 @@
 
 set -e  # stop on first error
 
-echo test
 cd ~/.dotfiles
 git pull
 ./package_install
