@@ -79,4 +79,15 @@ PROMPT='$THEME_PROMPT_PREFIX%f%B%F{240}%1~%f%b %(?.%F{green}$THEME_VI_MODE_SYMBO
 autoload -U promptinit; promptinit
 prompt spaceship
 
+### completion system
 source ~/.config/shell/zshrc.custom
+ # load module for list-style selection
+ zmodload zsh/complist
+
+ # use the module above for autocomplete selection
+ zstyle ':completion:*' menu yes select
+
+ # now we can define keybindings for complist module
+ # you want to trigger search on autocomplete items
+ # so we'll bind some key to trigger history-incremental-search-forward function
+ bindkey -M menuselect '?' history-incremental-search-forward
