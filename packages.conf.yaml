@@ -29,3 +29,5 @@
     - gvfs-smb
     - gvfs-mtp
     - volnoti
+    - alternating-layouts-git
+    - i3-layout-manager-git
