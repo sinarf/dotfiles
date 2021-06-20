@@ -227,15 +227,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# Autostart applications
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-#exec --no-startup-id manjaro-hello
-exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
-# handles the lock screen
-exec --no-startup-id  xss-lock -- i3lock -i /home/sinarf/Sync/pics/background/arch2560x1440.png -b -f -t -d
-
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
@@ -388,16 +379,24 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id alternating_layouts.py
 
 # Applications that runs on startup.
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
-exec --no-startup-id alternating_layouts.py
-exec --no-startup-id steam -silent
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+#exec --no-startup-id manjaro-hello
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+# fancy volume notification
+exec --no-startup-id volnoti
+# handles the lock screen
+exec --no-startup-id  xss-lock -- i3lock -i /home/sinarf/Sync/pics/background/arch2560x1440.png -b -f -t -d
+
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id blueman-applet
 exec --no-startup-id signal-desktop -- %u --start-in-tray
 exec --no-startup-id protonmail-bridge --no-window
 exec --no-startup-id birdtray
 exec --no-startup-id syncthingtray
-exec --no-startup-id volnoti
 
