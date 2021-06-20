@@ -1,8 +1,8 @@
 /* vim:ft=css */
 configuration {
-  modi: "window,drun,ssh,combi";
+  modi: "window,drun,ssh,combi,run";
   font: "Cascadia Code 16";
-  terminal: "alacritty";
+  terminal: "$TERMINAL";
   separator-style: "solid";
   theme: "~/.config/rofi/gruvbox.rasi";
   combi-modi: "window,drun,ssh";
