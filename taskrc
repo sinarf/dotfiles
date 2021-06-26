@@ -5,7 +5,7 @@
 # Use the command 'task show' to see all defaults and overrides
 
 # Files
-data.location=~/.task
+data.location=~/Sync/taskwarrior
 
 # Color theme (uncomment one to use)
 include /usr/share/doc/task/rc/dark-yellow-green.theme
