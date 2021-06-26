@@ -378,20 +378,26 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Utility scripts
+# handles the lock screen
+exec --no-startup-id  xss-lock -- i3lock -i /home/sinarf/Sync/pics/background/arch2560x1440.png -b -f -t -d
+# launch polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+# nice auto layout for i3
 exec --no-startup-id alternating_layouts.py
+# handle the wallpaper
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+# clipboard manager
+exec --no-startup-id greenclip daemon
+# fancy volume notification
+exec --no-startup-id volnoti
 
 # Applications that runs on startup.
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-#exec --no-startup-id manjaro-hello
+
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-# fancy volume notification
-exec --no-startup-id volnoti
-# handles the lock screen
-exec --no-startup-id  xss-lock -- i3lock -i /home/sinarf/Sync/pics/background/arch2560x1440.png -b -f -t -d
 
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id blueman-applet
