@@ -1,5 +1,4 @@
 - paru:
-    - spaceship-prompt-git
     - nodejs
     - python
     - ruby
@@ -31,3 +30,5 @@
     - volnoti
     - alternating-layouts-git
     - i3-layout-manager-git
+    - spaceship-prompt-git
+    - rofi-power-menu
