@@ -23,8 +23,8 @@ font pango:Victor\ Mono 14
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec alacritty
+# start a terminala
+bindsym $mod+Return exec alacritty -e tmux attach
 
 # kill focused window
 bindsym $mod+Shift+q kill
