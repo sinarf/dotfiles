@@ -171,12 +171,8 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-# brave app youtube 
-for_window [class="crx_eblnmhdhdbpcgejeepegnjccdalemccc"] fullscreen enable
-# brave app Prime video 
-for_window [class="crx_agimnkijcaahngcdmfeangaknmldooml"] fullscreen enable
-# brave app Netflix
-for_window [class="crx_eppojlglocelodeimnohnlnionkobfln"] fullscreen enable
+# brave apps  
+for_window [class="Brave-browser"] fullscreen enable
 for_window [title="Picture-in-Picture"] fullscreen enable
 
 # switch to workspace with urgent window automatically
@@ -361,12 +357,8 @@ mode "$mode_gaps_outer" {
 
 ## some application run on some specific workspace.
 assign [class="Steam"] $ws7
-# prime video brave windows
-assign [class="crx_eblnmhdhdbpcgejeepegnjccdalemccc"] $ws4
-# brave app youtube
-assign [class="crx_agimnkijcaahngcdmfeangaknmldooml"] $ws4
-# brave app Netflix
-assign [class="crx_eppojlglocelodeimnohnlnionkobfln"] $ws4
+#  brave 
+assign [class="Brave-browser"] $ws4
 assign [title="Picture-in-Picture"] $ws4
 
 # Sound keys configuration with volnoti as OSD feedback.
