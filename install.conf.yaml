@@ -30,6 +30,11 @@
     ~/.local/share/applications/tuir.desktop: "local/share/applications/tuir.desktop"
     ~/.local/share/applications/toot.desktop: "local/share/applications/toot.desktop"
     ~/.local/share/applications/rofi-search-ddg.desktop: "local/share/applications/rofi-search-ddg.desktop"
+    ~/.local/share/applications/brave-twitch.desktop: "local/share/applications/brave-twitch.desktop"
+    ~/.local/share/applications/brave-netflix.desktop: "local/share/applications/brave-netflix.desktop"
+    ~/.local/share/applications/brave-youtube.desktop: "local/share/applications/brave-youtube.desktop"
+    ~/.local/share/applications/brave-primevideo.desktop: "local/share/applications/brave-primevideo.desktop"
+    ~/.local/share/applications/brave-google-messages.desktop: "local/share/applications/brave-google-messages.desktop"
     ~/.config/alacritty:
       path: "config/alacritty/"
       create: true
