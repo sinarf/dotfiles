@@ -65,6 +65,19 @@ zle-line-finish() {
 }
 zle -N zle-line-finish
 
+# History configuration
+# the detailed meaning of the below three variable can be found in `man zshparam`.
+export HISTFILE=~/.histfile
+export HISTSIZE=1000000   # the number of items for the internal history list
+export SAVEHIST=1000000   # maximum number of items for the history file
+
+# The meaning of these options can be found in man page of `zshoptions`.
+setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
+setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
+setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
+setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately after execution
+setopt EXTENDED_HISTORY  # record command start time
+
 # Fix a bug when you C-c in CMD mode, you'd be prompted with CMD mode indicator
 # while in fact you would be in INS mode.
 # Fixed by catching SIGINT (C-c), set mode to INS and repropagate the SIGINT,
