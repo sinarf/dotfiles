@@ -48,9 +48,6 @@
     ~/.config/polybar:
       path: "config/polybar/"
       create: true
-    ~/.config/powerline:
-      path: "config/powerline/"
-      create: true
     ~/.config/rofi:
       path: "config/rofi/"
       create: true
