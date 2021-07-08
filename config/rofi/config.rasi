@@ -4,6 +4,6 @@ configuration {
   font: "Cascadia Code 16";
   terminal: "alacritty";
   separator-style: "solid";
-  theme: "~/.config/rofi/gruvbox.rasi";
+  theme: "~/.config/rofi/dracula.rasi";
   combi-modi: "window,drun,ssh";
 }
