@@ -6,6 +6,8 @@
 
 autoload -U compinit
 compinit
+autoload -U promptinit; promptinit
+prompt pure
 
 #allow tab completion in the middle of a word
 setopt COMPLETE_IN_WORD
@@ -89,8 +91,8 @@ TRAPINT() {
 
 PROMPT='$THEME_PROMPT_PREFIX%f%B%F{240}%1~%f%b %(?.%F{green}$THEME_VI_MODE_SYMBOL.%F{red}$THEME_VI_MODE_SYMBOL) '
 
-autoload -U promptinit; promptinit
-prompt spaceship
+#autoload -U promptinit; promptinit
+#prompt spaceship
 
 ### completion system
 source ~/.config/shell/zshrc.custom

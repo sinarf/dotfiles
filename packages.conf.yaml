@@ -29,7 +29,7 @@
     - volnoti
     - alternating-layouts-git
     - i3-layout-manager-git
-    - spaceship-prompt-git
     - rofi-power-menu
     - rofi-greenclip
     - tmux-plugin-manager
+    - zsh-pure-prompt
