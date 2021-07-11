@@ -55,7 +55,3 @@ key_bindings:
   - { key: C, mods: Control|Shift, action: Copy }
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
-#shell:
-#program: /usr/bin/tmux
-#args:
-#- attach
