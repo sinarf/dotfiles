@@ -8,7 +8,15 @@ export XDG_DATA_HOME=$HOME/.local/share
 export DOT_FILES="$HOME/.dotfiles"
 
 # default programs
-export TERM='xterm-256color' 
+if [[ -z "$TMUX" ]] 
+then 
+    export TERM='xterm-256color' 
+else
+    # we should use this when in tmux
+    # learn more at: https://rakhesh.com/linux-bsd/basic-tmux-configuration/
+    export TERM='screen-256color' 
+fi
+
 export TERMINAL=/usr/bin/alacritty
 export BROWSER='firefox'
 # EDITOR
