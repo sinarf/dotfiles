@@ -7,7 +7,6 @@
 
 [ -f ~/.config/shell/theme.zsh ] && . ~/.config/shell/theme.zsh
 [ -f ~/.config/shell/completion.zsh ] && . ~/.config/shell/completion.zsh
-[ -f ~/.config/shell/fzf.zsh ] && . ~/.config/shell/fzf.zsh
 
 ## some fzf awsomeness
 [ -f /usr/share/fzf/key-bindings.zsh ] && . /usr/share/fzf/key-bindings.zsh
