@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-./dotbot/bin/dotbot -p dotbot-paru/paru.py -c packages.conf.yaml
