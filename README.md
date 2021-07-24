@@ -13,4 +13,5 @@ I split my configuration as Modules.
 
 Some directories are special, as not to be used as modules :
 
-* bin : this directory is added to the path as `$DOT_FILES/bin`
+* bin ==> this directory is added to the path as `$DOT_FILES/bin`
+* softwares ==> this directory contains text files with a lists of softwares to install, with the `$DOT_FILES/bin/batch_install_softwares.sh`
