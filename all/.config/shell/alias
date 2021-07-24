@@ -12,3 +12,4 @@ alias chmod="chmod -v"
 
 alias tm="tmux attach"
 
+alias stow="stow -v2"

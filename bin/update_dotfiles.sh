@@ -13,7 +13,8 @@ echo "Moving to the dotfiles directory: $DOT_FILES"
 cd $DOT_FILES
 echo "pulling change..."
 git pull
-echo "Installing packages..."
-./package_install
 echo "Linking dotfiles..."
-./install
+stow all
+stow linux
+echo "Pushing back..."
+git push
