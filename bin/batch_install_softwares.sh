@@ -13,4 +13,4 @@ else
 fi
 
 softwares=$(cat $filename)
-paru -S $softwares
+paru -Syu $softwares

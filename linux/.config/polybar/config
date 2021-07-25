@@ -71,7 +71,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
-modules-center = pomo mpd
+modules-center = pomodoro mpd
 modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu battery temperature date powermenu
 
 tray-position = right
@@ -92,10 +92,10 @@ scroll-down = i3wm-wsprev
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/pomo]
+[module/pomodoro]
 type = custom/script
 interval = 1
-exec = pomo status
+exec = i3-gnome-pomodoro status
 
 [module/xwindow]
 type = internal/xwindow
