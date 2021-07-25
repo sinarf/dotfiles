@@ -357,13 +357,17 @@ mode "$mode_gaps_outer" {
 
 ## some application run on some specific workspace.
 assign [class="Steam"] $ws7
-#  brave 
+#  video stuffs 
 assign [class="Brave-browser"] $ws4
 assign [title="Picture-in-Picture"] $ws4
-assign [class="Whalebird"] $ws0
-assign [class="Cawbird"] $ws0
+
+# social
+assign [class="Whalebird"] $ws9
+assign [class="Cawbird"] $ws9
+# chats
 assign [class="Signal"] $ws0
 assign [class="Slack"] $ws0
+assign [class="Element"] $ws0
 
 # Sound keys configuration with volnoti as OSD feedback.
 bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer set Master 2%+ && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
@@ -413,6 +417,7 @@ exec --no-startup-id birdtray
 exec --no-startup-id whalebird
 exec --no-startup-id slack -u
 exec --no-startup-id cawbird
+exec --no-startup-id element-desktop --hidden
 exec --no-startup-id espanso daemon
 # making this one wait a bit because it starts to fast and the systray is not availlaible yet
 exec --no-startup-id sleep 10; syncthingtray
