@@ -7,8 +7,8 @@
 
 [ -f ~/.config/shell/theme.zsh ] && . ~/.config/shell/theme.zsh
 [ -f ~/.config/shell/completion.zsh ] && . ~/.config/shell/completion.zsh
+#[ -f ~/.config/shell/zsh-syntax-highlighting.zsh ] && . ~/.config/shell/zsh-syntax-highlighting.zsh
 [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-[ -f ~/.config/shell/zsh-syntax-highlighting.zsh ] && . ~/.config/shell/zsh-syntax-highlighting.zsh
 
 ## some fzf awsomeness
 [ -f /usr/share/fzf/key-bindings.zsh ] && . /usr/share/fzf/key-bindings.zsh
