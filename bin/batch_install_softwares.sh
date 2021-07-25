@@ -4,7 +4,7 @@
 set +e # stop on firt error
 
 softwares_dir=$DOT_FILES/softwares
-if [ -n ${1+x} ]; 
+if [ $# -eq 0 ]; 
 then
     cd $softwares_dir
     filename=$(fzf --prompt="No file provided, please choose one: ")
