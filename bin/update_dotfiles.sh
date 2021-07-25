@@ -11,10 +11,11 @@ fi
 
 echo "Moving to the dotfiles directory: $DOT_FILES"
 cd $DOT_FILES
-echo "pulling change..."
+echo "pulling change from upstream..."
 git pull
 echo "Linking dotfiles..."
-stow all
-stow linux
-echo "Pushing back..."
+stow -v2 all
+stow -v2 linux
+echo "Pushing local modifications..."
 git push
+
