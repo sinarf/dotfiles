@@ -17,7 +17,7 @@ else
     export TERM='screen-256color' 
 fi
 
-export TERMINAL=/usr/bin/alacritty
+export TERMINAL=/usr/bin/kitty
 export BROWSER='firefox'
 # EDITOR
 export VISUAL="$TERMINAL -e nvim"
