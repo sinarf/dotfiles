@@ -24,7 +24,7 @@ font pango:Victor\ Mono 14
 floating_modifier $mod
 
 # start a terminala
-bindsym $mod+Return exec alacritty -e tmux attach
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
