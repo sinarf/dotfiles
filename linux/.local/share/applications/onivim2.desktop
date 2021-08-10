@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Onivim 2
+Comment=IDE 
+TryExec=~/bin/Onivim2.AppDir/AppRun
+Exec=~/bin/Onivim2.AppDir/AppRun
+Terminal=false
+Type=Application
+Keywords=dev;
+Icon=neovim
+Categories=tools;
+StartupNotify=false
