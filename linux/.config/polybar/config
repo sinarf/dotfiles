@@ -99,7 +99,7 @@ inherit = bar/base
 
 modules-left = i3
 modules-center = xwindow
-modules-right =  battery cpu memory volume date
+modules-right =  pomodoro battery cpu memory volume date
 
 tray-background = ${color.module-bg}
 tray-padding = ${layout.module-padding}
@@ -197,6 +197,11 @@ content = "%{T3}%{T-}"
 ; }}}
 
 ; modules {{{
+
+[module/pomodoro]
+type = custom/script
+interval = 1
+exec = i3-gnome-pomodoro status
 
 [module/i3]
 type = internal/i3
