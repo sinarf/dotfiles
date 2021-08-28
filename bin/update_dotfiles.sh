@@ -14,8 +14,8 @@ cd $DOT_FILES
 echo "pulling change from upstream..."
 git pull
 echo "Linking dotfiles..."
-stow -v2 all
-stow -v2 linux
+stow -v1 all
+stow -v1 linux
 echo "Pushing local modifications..."
 git push
 

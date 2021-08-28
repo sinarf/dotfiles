@@ -35,6 +35,8 @@ bindsym Mod1+space exec --no-startup-id rofi -show combi
 bindsym $mod+z exec --no-startup-id ~/.dotfiles/bin/popup_terminal.sh
 bindsym Ctrl+Escape exec --no-startup-id ~/.dotfiles/bin/popup_terminal.sh
 
+bindsym $mod+n exec --no-startup-id exec kitty --title dailynotes_window -e ~/.dotfiles/bin/dailynotes.sh
+
 # Print Screen features
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -168,6 +170,10 @@ for_window [class="Xfburn"] floating enable
 # brave apps  
 for_window [class="Brave-browser"] fullscreen enable
 for_window [title="Picture-in-Picture"] fullscreen enable
+
+for_window [title="dailynotes_window"] floating enable
+for_window [title="dailynotes_window"] resize set 1440 900
+for_window [title="dailynotes_window"] move position center
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus

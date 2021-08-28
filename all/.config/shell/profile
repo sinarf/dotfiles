@@ -37,3 +37,5 @@ export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
 export ZDOTDIR="$XDG_DATA_HOME/zsh"
 
+# needed for archlinux-nix
+source /etc/profile.d/nix{,-daemon}.sh
