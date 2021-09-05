@@ -1,9 +1,10 @@
-
 [Desktop Entry]
 Name=daily note script
-Comment=
-Exec=dailynotes.sh
+Comment=Journal your life
+TryExec=nvim
+Exec=.dotfiles/bin/dailynotes.sh
 Terminal=true
 Type=Application
 Categories=notes;productivity
+StartupNotify=false
 
