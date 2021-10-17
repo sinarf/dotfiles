@@ -240,6 +240,7 @@ keybinds:
           key: [Ctrl: 'q',]
         - action: [Detach,]
           key: [Char: 'd',]
+disable_mouse_mode: true
 
 # Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 # eg. when terminal window with an active zellij session is closed
