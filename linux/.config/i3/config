@@ -178,6 +178,8 @@ for_window [title="dailynotes_window"] move position center
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+## needed for some game from origin
+for_window [title="^Origin$"] floating enable, fullscreen disable
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
