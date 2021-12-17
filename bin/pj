@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# @author sinarf
+#
+project_directory="${HOME}/git"
+
+project=$(find "${project_directory}" -maxdepth 1 | fzf)
+tmux new-window -c $project
+tmux rename-window $(basename $project)
+
