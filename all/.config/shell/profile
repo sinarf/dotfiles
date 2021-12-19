@@ -7,6 +7,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 # my dotfiles are here
 export DOT_FILES="$HOME/.dotfiles"
 
+# my daily note file
+export TODAY_NOTE="$HOME/Sync/pkb/main/today.md"
+
 # default programs
 if [[ -z "$TMUX" ]] 
 then 

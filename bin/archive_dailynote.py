@@ -5,10 +5,11 @@ from datetime import timedelta
 import os
 import shutil
 
-today = date.today()
-yesterday = today - timedelta(days=1)
 home = os.environ['HOME']
-dailynote = home + '/Sync/pkb/main/quicknote.md'
+dailynote = os.environ['TODAY_NOTE']
+
+yesterday = date.today() - timedelta(days=1)
+
 archivenote = home + '/Sync/pkb/main/diary/' + str(yesterday) + '.md'
 
 # only archive if not already done
