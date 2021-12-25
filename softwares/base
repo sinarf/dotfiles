@@ -17,6 +17,7 @@ tmux-plugin-manager
 git
 zsh
 zsh-syntax-highlighting
+zsh-vi-mode
 syncthing
 pass
 kitty

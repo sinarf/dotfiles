@@ -1,2 +1,5 @@
-yarn
-ripgrep
+python-pynvim
+ruby-neovim
+neovim-remote
+neovim-symlinks
+lazygit
