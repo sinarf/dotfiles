@@ -32,8 +32,4 @@ setopt EXTENDED_HISTORY  # record command start time
 autoload -U colors
 colors
 
-## vi binding
-bindkey -v
-export KEYTIMEOUT=1
-
 source ~/.config/shell/zshrc.custom
