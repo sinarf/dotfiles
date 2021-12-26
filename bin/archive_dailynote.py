@@ -5,15 +5,21 @@ from datetime import timedelta
 import os
 import shutil
 
-home = os.environ['HOME']
-dailynote = os.environ['TODAY_NOTE']
+home = os.environ["HOME"]
+dailynote = os.environ["TODAY_NOTE"]
 
 yesterday = date.today() - timedelta(days=1)
 
-archivenote = home + '/Sync/pkb/main/diary/' + str(yesterday) + '.md'
+archivednote = home + "/Sync/pkb/main/diary/" + str(yesterday) + ".md"
 
-# only archive if not already done
-if os.path.exists(archivenote):
-    print(archivenote + ' already exists')
-else:
-    shutil.copyfile(dailynote, archivenote)
+
+def archivenote():
+    # only archive if not already done
+    if os.path.exists(archivednote):
+        print(archivednote + " already exists")
+    else:
+        shutil.copyfile(dailynote, archivednote)
+
+
+if __name__ == "__main__":
+    archivenote()
