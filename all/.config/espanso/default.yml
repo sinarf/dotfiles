@@ -10,6 +10,9 @@ matches:
   # Simple text replacement
   - trigger: ":espanso"
     replace: "Hi there!"
+  # vi mode for the shell
+  #- trigger: ":vi"
+  #replace: " set -o vi"
 
   # Dates
   - trigger: ":date"
@@ -44,3 +47,5 @@ matches:
         type: shell
         params:
           cmd: "echo Hello from your shell"
+  - trigger: ":gitmaint"
+    replace: "https://scm.corp.myscript.com/scm/platform/maintenance-scripts.git"
