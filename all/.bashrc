@@ -13,6 +13,8 @@ alias ls='ls --color=auto'
 [ -f ~/.config/shell/profile ] && source ~/.config/shell/profile
 [ -f ~/.profile ] && source ~/.profile
 
+# makes history ingore dupplicate and command starting by space
+export HISTCONTROL=ignoreboth
 # override stuff from my default configuration
 export TERMINAL='/opt/homebrew/bin/kitty'
 export BROWSER='/Applications/Firefox.app/Contents/MacOS/firefox'
@@ -33,3 +35,8 @@ alias python='python3'
 
 alias vi='nvim'
 alias vim='nvim'
+
+
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
+# END_KITTY_SHELL_INTEGRATION
