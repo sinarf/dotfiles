@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Today note
-Comment=Journal your life
+Name=WIP note
+Comment=Random WIP texts
 TryExec=nvim
-Exec=$VISUAL $TODAY_NOTE
+Exec=wip_note.sh
 Terminal=true
 Type=Application
 Categories=notes;productivity

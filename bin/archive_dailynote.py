@@ -18,6 +18,7 @@ def archivenote():
     if os.path.exists(archivednote):
         print(archivednote + " already exists")
     else:
+        print(f"Archiving note {archivenote}")
         shutil.copyfile(dailynote, archivednote)
 
 

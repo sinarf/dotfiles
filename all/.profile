@@ -23,8 +23,8 @@ export TERMINAL='kitty'
 export BROWSER='firefox'
 
 # EDITOR
-if (which neovide); then
-	export VISUAL='neovide'
+if (command -v neovide> /dev/null 2>&1) ; then
+  export VISUAL='neovide'
 else
 	export VISUAL="$TERMINAL -e nvim"
 fi
