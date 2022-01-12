@@ -1,3 +1,4 @@
+setfont ter-p32b
 
 # XDG Paths
 export XDG_CONFIG_HOME=$HOME/.config
@@ -7,8 +8,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 # my dotfiles are here
 export DOT_FILES="$HOME/.dotfiles"
 
-# my daily note file
+# my note files
 export TODAY_NOTE="$HOME/Sync/pkb/main/today.md"
+export WIP_NOTE="$HOME/Sync/pkb/main/wip.md"
 
 # default programs
 if [[ -z "$TMUX" ]] 
@@ -20,10 +22,14 @@ else
     export TERM='screen-256color' 
 fi
 
-export TERMINAL=/usr/bin/kitty
+export TERMINAL='kitty'
 export BROWSER='firefox'
 # EDITOR
-export VISUAL="$TERMINAL -e nvim"
+if (which neovide) ; then
+  export VISUAL='neovide'
+else
+  export VISUAL="$TERMINAL -e nvim"
+fi
 export EDITOR='nvim'
 
 export JAVA_HOME='/usr/lib/jvm/default'
