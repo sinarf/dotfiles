@@ -4,7 +4,6 @@
 #
 project_directory="${HOME}/git"
 
-project=$(find "${project_directory}" -maxdepth 1 | fzf)
+project=$(find "${project_directory}" -maxdepth 1 | fzf --query $1)
 tmux new-window -c $project
 tmux rename-window $(basename $project)
-
