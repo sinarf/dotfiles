@@ -24,3 +24,5 @@ kitty
 ttf-fira-code
 ntp
 etckeeper
+calendar-cli
+entr

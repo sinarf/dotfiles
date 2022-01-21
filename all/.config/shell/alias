@@ -14,3 +14,7 @@ alias tm="tmux attach"
 
 alias stow="stow -v2"
 alias venv=". venv/bin/activate || echo 'Could not enable venv virtual environment'"
+
+# calendar-cli
+alias todo='calendar-cli todo'
+alias kal='calendar-cli calendar'

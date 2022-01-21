@@ -16,7 +16,7 @@
 	insteadOf = git://
 [alias]
 	lg = log --word-diff  -p
-	l = log --oneline --abbrev-commit --all --graph --decorate --color
+	l = log --oneline --color -25
 [svn]
 	rmdir = true
 [credential]
