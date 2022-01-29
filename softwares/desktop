@@ -20,3 +20,6 @@ i3exit
 polybar-spotify-module
 remmina
 libvncserver
+kdeconnect
+indicator-kdeconnect-git
+
