@@ -14,7 +14,7 @@ pulled=true
 echo "Moving to the dotfiles directory: $DOT_FILES"
 cd "$DOT_FILES"
 echo "pulling change from upstream..."
-git pull || pulled=false; echo ">>> pull failed, the code will NOT be pushed at the end of the script."
+git pull || (pulled=false ; echo ">>> pull failed, the code will NOT be pushed at the end of the script.")
 echo "Linking dotfiles..."
 stow -v1 all
 if [[ "$(uname)" == Darwin ]] ; then
