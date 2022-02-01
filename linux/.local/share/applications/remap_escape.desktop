@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Remap CAPS LOCK to ESCAPE
+Comment=let the caps lock escape
+TryExec=xmodmap
+Exec=remap_capslock_to_escape.sh
+Terminal=true
+Type=Application
+Keywords=Utils;
+StartupNotify=false
