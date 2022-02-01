@@ -21,5 +21,10 @@ polybar-spotify-module
 remmina
 libvncserver
 kdeconnect
-indicator-kdeconnect-git
-
+nerd-fonts-complete
+dracula-gtk-theme
+polybar
+ttf-roboto
+ttf-ubuntu-font-family
+playerctl
+python-gobject
