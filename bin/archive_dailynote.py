@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 from datetime import date
+import logging as log
 from os import environ, path
 import shutil
-import logging as log
 
 home = environ["HOME"]
 dailynote = environ["TODAY_NOTE"]
@@ -31,5 +31,9 @@ def archivenote():
 
 
 if __name__ == "__main__":
-    log.basicConfig(filename=f"{home}/admin.log", level=log.INFO)
+    log.basicConfig(
+        filename=f"{home}/admin.log",
+        format="%(levelename)s:%(message)s",
+        level=log.INFO,
+    )
     archivenote()
