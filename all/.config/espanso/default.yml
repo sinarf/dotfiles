@@ -49,3 +49,5 @@ matches:
           cmd: "echo Hello from your shell"
   - trigger: ":gitmaint"
     replace: "https://scm.corp.myscript.com/scm/platform/maintenance-scripts.git"
+  - trigger: ";vi"
+    replace: " set -o vi"
