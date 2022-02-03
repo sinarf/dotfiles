@@ -1,4 +1,4 @@
-source .profile
+source ~/.zprofile
 
 if [ -f "${HOME}/.cargo/env" ] ; then
   . "$HOME/.cargo/env"
