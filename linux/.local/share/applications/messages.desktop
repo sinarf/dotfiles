@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Messages for the web
+Comment=Open messages in default browser
+TryExec=xdg-open
+Exec=xdg-open https://messages.google.com/web/conversations
+Terminal=false
+Type=Application
+Keywords=Utils
+Icon=mail
+Categories=Utility;
+StartupNotify=false
+

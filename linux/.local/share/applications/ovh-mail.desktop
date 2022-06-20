@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=OVH Mail Inbox
+Comment=Open OVH mail in default browser
+TryExec=xdg-open
+Exec=xdg-open https://mail.ovh.net/roundcube/?_task=mail&_mbox=INBOX
+Type=Application
+Keywords=Utils;mail
+Icon=mail
+Categories=Utility;
+StartupNotify=false
+

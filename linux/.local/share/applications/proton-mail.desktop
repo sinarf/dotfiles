@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Proton Mail Inbox
+Comment=Open Proton mail in default browser
+TryExec=xdg-open
+Exec=xdg-open https://mail.proton.me/u/0/inbox
+Terminal=false
+Type=Application
+Keywords=Utils;mail
+Icon=mail
+Categories=Utility;
+StartupNotify=false
+
