@@ -9,7 +9,6 @@ xfce4-goodies
 rofi
 rofi-search-git
 ddgr
-polybar
 syncthingtray
 volnoti
 alternating-layouts-git
@@ -17,7 +16,6 @@ i3-layout-manager-git
 rofi-power-menu
 rofi-greenclip
 i3exit
-polybar-spotify-module
 remmina
 libvncserver
 kdeconnect
