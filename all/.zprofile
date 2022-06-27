@@ -4,6 +4,21 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
+if [ -f "${HOME}/.cargo/env" ] ; then
+  . "$HOME/.cargo/env"
+fi
+
+if [ -d "${HOME}/.cargo/bin" ] ; then
+  export PATH="$PATH:~/.cargo/bin"
+fi
+## Mac specific stuffs
+if [ "$(uname)" = Darwin ]; then
+  [ -f /opt/homebrew/bin ] && export PATH="/opt/homebrew/bin:$PATH"
+  [ -f /opt/homebrew/sbin ] && export PATH="/opt/homebrew/sbin:$PATH"
+  [ -f /opt/homebrew/opt/openjdk@11/bin ] && export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home/
+fi
+
 # my dotfiles are here
 export DOT_FILES="$HOME/.dotfiles"
 
@@ -22,16 +37,10 @@ fi
 
 export TERMINAL='kitty'
 export BROWSER='firefox'
-
 # EDITOR
 export EDITOR='nvim'
 
 export JAVA_HOME='/usr/lib/jvm/default'
-
-# Use bash-completion, if available
-if [ -f /etc/bash_completion ]; then
-  . /etc/bash_completion
-fi
 
 # add local bin directory to the path
 export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$DOT_FILES/bin"
