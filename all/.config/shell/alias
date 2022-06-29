@@ -1,7 +1,7 @@
 #
 # list of my bash aliases. 
 # 
-if command -v exa; then
+if command -v exa > /dev/null; then
   alias ls=exa
 fi
 alias ll="ls -l"
