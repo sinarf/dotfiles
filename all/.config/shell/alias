@@ -1,7 +1,9 @@
 #
 # list of my bash aliases. 
 # 
-alias ls=exa
+if command -v exa; then
+  alias ls=exa
+fi
 alias ll="ls -l"
 alias la="ls -a"
 alias grep="grep --color"
