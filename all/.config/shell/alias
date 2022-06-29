@@ -18,3 +18,7 @@ alias venv=". venv/bin/activate || echo 'Could not enable venv virtual environme
 # calendar-cli
 alias todo='calendar-cli todo'
 alias kal='calendar-cli calendar'
+
+# all vi belong to neovim
+alias vi=nvim
+alias vim=nvim
