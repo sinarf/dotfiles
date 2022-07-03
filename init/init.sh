@@ -76,3 +76,5 @@ echo "Setting tmux plugin manager"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "Might be a good time to reboot..."
 
+
+"$DOT_FILES/init/install_bluetooth.sh"
