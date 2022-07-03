@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Command and Conquer 3: Kane's Wrath
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/24810
+Icon=steam_icon_24810
+Terminal=false
+Type=Application
+Categories=Game;

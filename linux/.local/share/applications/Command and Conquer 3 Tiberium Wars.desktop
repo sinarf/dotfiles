@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Command and Conquer 3: Tiberium Wars
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/24790
+Icon=steam_icon_24790
+Terminal=false
+Type=Application
+Categories=Game;

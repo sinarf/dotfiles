@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=A Total War Saga: TROY
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1099410
+Icon=steam_icon_1099410
+Terminal=false
+Type=Application
+Categories=Game;
