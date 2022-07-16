@@ -34,12 +34,14 @@ neovim-symlinks
 nerd-fonts-complete
 network-manager-applet
 nodejs
+nodejs-markdownlint-cli
 ntp
 pavucontrol
 playerctl
 polybar
 powerline
 python
+python-black
 python-gobject
 python-pipenv
 python-pynvim
