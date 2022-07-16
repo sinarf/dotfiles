@@ -10,11 +10,17 @@ if [ -z "$DOT_FILES" ]; then
     dot_files=$(dirname "$0")/..
     export DOT_FILES=${dot_files}
 fi
-pulled=true
+pulled=false
 echo "Moving to the dotfiles directory: $DOT_FILES"
 cd "$DOT_FILES"
 echo "pulling change from upstream..."
-git pull || (pulled=false ; echo ">>> pull failed, the code will NOT be pushed at the end of the script.")
+git fetch -p
+if git pull; then 
+  pulled=true
+else
+ echo ">>> pull failed, the code will NOT be pushed at the end of the script."
+fi
+
 echo "Linking dotfiles..."
 stow -v1 all
 if [[ "$(uname)" == Darwin ]] ; then
