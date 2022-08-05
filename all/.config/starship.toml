@@ -1,0 +1,49 @@
+add_newline = true
+command_timeout=1000
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[git_branch]
+symbol = "🌱 "
+
+[git_metrics]
+disabled = true
+added_style = "bold blue"
+
+[git_status]
+ahead = "⤴️"
+behind = "⤵️"
+diverged = "😵"
+up_to_date = "👌"
+untracked = "🤷"
+stashed = "📦"
+modified = "🖋️"
+staged = '[++\($count\)](green)'
+renamed = "🔄"
+deleted = "🗑"
+conflicted = "🙅 "
+
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = " took [$duration]($style)"
+
+[hostname]
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
+
+[python]
+python_binary = ["python3", "python2", "python"]
+style = "bold green"
+pyenv_version_name = true
+detect_folders = [ "venv" ]
+
+[package]
+disabled = true
+
+
