@@ -2,7 +2,7 @@
 configuration {
   modi: "window,drun,ssh,combi,run";
   font: "Cascadia Code 16";
-  terminal: "alacritty";
+  terminal: "kitty";
   separator-style: "solid";
   combi-modi: "window,drun,ssh";
 }
