@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Warhammer 40,000: Dawn of War - Soulstorm
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/9450
+Icon=steam_icon_9450
+Terminal=false
+Type=Application
+Categories=Game;

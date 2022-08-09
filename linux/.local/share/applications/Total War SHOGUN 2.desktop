@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Portal 2
+Name=Total War: SHOGUN 2
 Comment=Play this game on Steam
-Exec=steam steam://rungameid/620
-Icon=steam_icon_620
+Exec=steam steam://rungameid/34330
+Icon=steam_icon_34330
 Terminal=false
 Type=Application
 Categories=Game;

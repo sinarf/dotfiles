@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Age of Empires III: Definitive Edition
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/933110
+Icon=steam_icon_933110
+Terminal=false
+Type=Application
+Categories=Game;
