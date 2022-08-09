@@ -36,6 +36,7 @@ network-manager-applet
 nodejs
 nodejs-markdownlint-cli
 ntp
+mdcat
 pavucontrol
 playerctl
 polybar
@@ -53,7 +54,6 @@ rofi-power-menu
 ruby
 ruby-neovim
 signal-desktop
-slack-desktop
 starship
 syncthing
 syncthingtray
