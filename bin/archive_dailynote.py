@@ -4,6 +4,7 @@ from datetime import date
 import logging as log
 from os import environ, path
 import shutil
+import argparse
 
 home = environ["HOME"]
 dailynote = environ["TODAY_NOTE"]
@@ -31,8 +32,33 @@ def archivenote():
 
 
 if __name__ == "__main__":
-    log.basicConfig(
-        format="%(asctime)s:%(levelname)s:%(message)s",
-        level=log.INFO,
+    parser = argparse.ArgumentParser(description="Check packages")
+    # Optional parameters
+    parser.add_argument(
+        "-q",
+        "--quiet",
+        action="store_true",
+        help="Quiet mode, shows only warnings and errors.",
+        default=False,
     )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Enable log debug, (override --quiet)",
+        default=False,
+    )
+
+    args = parser.parse_args()
+
+    loglevel = log.INFO
+    if args.quiet:
+        loglevel = log.WARNING
+    if args.verbose:
+        loglevel = log.DEBUG
+
+    log.basicConfig(format="%(asctime)s:%(levelname)s:%(message)s", level=loglevel)
+    if args.verbose and args.quiet:
+        log.warn("Verbose takes over quiet mode when both enabled")
+    log.debug("DEBUG mode enabled")
     archivenote()
