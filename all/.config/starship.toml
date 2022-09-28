@@ -10,21 +10,22 @@ discharging_symbol = "⚡"
 symbol = "🌱 "
 
 [git_metrics]
-disabled = true
+disabled = false
 added_style = "bold blue"
 
 [git_status]
 ahead = "⤴️"
 behind = "⤵️"
 diverged = "😵"
-up_to_date = "✓"
+up_to_date = "🟰"
 untracked = "🤷"
 stashed = "📦"
-modified = "🖋️"
-staged = '[++\($count\)](green)'
+modified = "✨"
+staged = '[++\($count\)](blue)'
 renamed = "🔄"
 deleted = "🗑"
 conflicted = "🙅 "
+style = "blue"
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
