@@ -39,8 +39,12 @@ export TERMINAL='kitty'
 export BROWSER='firefox'
 # EDITOR
 export EDITOR='nvim'
-
-export JAVA_HOME='/usr/lib/jvm/default'
+sdk_java_dir="~/.sdkman/candidates/java/current"
+if [ -f "${sdk_java_dir}" ]; then 
+    export JAVA_HOME="${sdk_java_dir}"
+else
+    export JAVA_HOME='/usr/lib/jvm/default'
+fi
 
 # add local bin directory to the path
 export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$DOT_FILES/bin"
