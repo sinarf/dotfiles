@@ -4,11 +4,10 @@
 #
 project_directory="${HOME}/git"
 
-if [ -n "${1}" ]; then
-	param="--query ${1}"
-else
-	param=''
-fi
 project=$(find "${project_directory}" -maxdepth 1 | fzf)
+cd "${project}" &&
+  if [[ -d '.git' ]]; then
+    git fetch -p &>/dev/null
+  fi
 tmux new-window -c "${project}"
 tmux rename-window "$(basename "${project}")"
