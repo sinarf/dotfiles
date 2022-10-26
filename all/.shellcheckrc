@@ -1,3 +1,2 @@
-source-path=SCRIPTDIR
 external-sources=true
 enable=require-variable-braces
