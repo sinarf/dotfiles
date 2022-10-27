@@ -7,6 +7,7 @@ fi
 if [ -d "${HOME}/.cargo/bin" ] ; then
   export PATH="$PATH:~/.cargo/bin"
 fi
+export NEOVIDE_FRAME='none'
 ## Mac specific stuffs
 if [ "$(uname)" = Darwin ]; then
   [ -f /opt/homebrew/bin ] && export PATH="/opt/homebrew/bin:$PATH"
@@ -15,5 +16,6 @@ if [ "$(uname)" = Darwin ]; then
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home/
   alias vi='nvim'
   alias vim='nvim'
+  export NEOVIDE_FRAME='transparent'
 fi
 
