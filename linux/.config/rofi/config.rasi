@@ -6,4 +6,4 @@ configuration {
   separator-style: "solid";
   combi-modi: "window,drun,ssh";
 }
-@theme "~/.config/rofi/dracula.rasi"
+@theme "~/.config/rofi/dracula2.rasi"
