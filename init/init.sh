@@ -61,6 +61,8 @@ done
 echo "Files that have been backuped, just in case, it should be ok to remove it"
 tree "$backup_dir" 
 
+# create the applications directory so stow will link the the files not the directory
+mkdir -v ~/.local/share/applications/
 update_dotfiles.sh
 sudo usermod --shell /bin/zsh "$USER"
 
