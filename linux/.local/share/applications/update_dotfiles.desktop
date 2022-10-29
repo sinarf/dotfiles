@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Update dot files
+Comment=Update my dot files
+Exec=update_dotfiles.sh
+Terminal=true
+Type=Application
+Categories=web;
+
+

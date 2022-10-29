@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Install everything
+Comment=Install all my softwares
+Exec=install_all_software.sh
+Terminal=true
+Type=Application
+Categories=web;
+
