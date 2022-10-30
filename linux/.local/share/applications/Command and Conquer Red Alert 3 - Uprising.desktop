@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Command and Conquer: Red Alert 3 - Uprising
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/24800
-Icon=steam_icon_24800
-Terminal=false
-Type=Application
-Categories=Game;
