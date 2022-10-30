@@ -28,6 +28,7 @@ kdeconnect
 kitty
 lazygit
 libvncserver
+luarocks
 man-db
 man-pages
 mirrorlist-rankmirrors-hook
@@ -37,12 +38,14 @@ nerd-fonts-complete
 network-manager-applet
 nodejs
 nodejs-markdownlint-cli
+neovim-cmp-npm-git
 ntp
 mdcat
 pavucontrol
 playerctl
 polybar
 powerline
+prettier
 python
 python-black
 python-gobject
@@ -72,6 +75,7 @@ xfce4-goodies
 xorg-apps
 yarn
 youtube-dl
+zip
 zsh
 zsh-syntax-highlighting
 zsh-vi-mode
