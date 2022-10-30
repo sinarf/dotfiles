@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Warhammer 40,000: Dawn of War II
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/15620
-Icon=steam_icon_15620
-Terminal=false
-Type=Application
-Categories=Game;

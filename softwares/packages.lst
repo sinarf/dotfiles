@@ -4,6 +4,7 @@ alternating-layouts-git
 bat
 calendar-cli
 cawbird
+deno
 ddgr
 dracula-gtk-theme
 element-desktop
@@ -54,9 +55,10 @@ rofi-greenclip
 rofi-power-menu
 ruby
 ruby-neovim
-signal-desktop
+shfmt
 starship
 syncthing
+thunar-volman
 tdrop-git
 tmux
 tmux-plugin-manager
@@ -67,6 +69,7 @@ volnoti
 whalebird
 xclip
 xfce4-goodies
+xorg-apps
 yarn
 youtube-dl
 zsh

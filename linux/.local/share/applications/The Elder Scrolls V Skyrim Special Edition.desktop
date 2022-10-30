@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=The Elder Scrolls V: Skyrim Special Edition
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/489830
-Icon=steam_icon_489830
-Terminal=false
-Type=Application
-Categories=Game;

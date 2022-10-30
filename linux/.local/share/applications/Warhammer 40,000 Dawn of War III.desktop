@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Warhammer 40,000: Dawn of War III
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/285190
-Icon=steam_icon_285190
-Terminal=false
-Type=Application
-Categories=Game;
