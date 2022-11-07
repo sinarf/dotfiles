@@ -3,7 +3,7 @@
 # this script will setup my custom neovim configuration
 
 nvim_config_dir="$HOME/.config/nvim"
-git_branch='spring.2022.cleaning'
+git_branch='production'
 git_url='git@github.com:sinarf/dotnvim.git'
 
 if [ -d "$nvim_config_dir" ]; then
