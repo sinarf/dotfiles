@@ -38,7 +38,6 @@ nerd-fonts-complete
 network-manager-applet
 nodejs
 nodejs-markdownlint-cli
-neovim-cmp-npm-git
 ntp
 mdcat
 pavucontrol
@@ -61,6 +60,7 @@ ruby-neovim
 shfmt
 starship
 syncthing
+tdrop
 thunar-volman
 tdrop-git
 tmux
