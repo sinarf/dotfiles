@@ -26,4 +26,6 @@ alias vi=nvim
 alias vim=nvim
 
 # Enable vi keybindings on remote ssh
-alias ssh="ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes"
+# alias ssh="ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes"
+alias ssh='ssh_helper.sh'
+alias pj='project_helper.sh'

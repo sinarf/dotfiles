@@ -5,9 +5,8 @@
 project_directory="${HOME}/git"
 
 project=$(find "${project_directory}" -maxdepth 1 | fzf)
-cd "${project}" &&
-  if [[ -d '.git' ]]; then
-    git fetch -p &>/dev/null
-  fi
 tmux new-window -c "${project}"
+{
+  tmux send-keys "git fetch -p || true" Enter
+}
 tmux rename-window "$(basename "${project}")"
