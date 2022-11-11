@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Install everything
-Comment=Install all my softwares
+Name=System Update
+Comment=Full system update
 Exec=install_all_software.sh
 Terminal=true
 Type=Application
