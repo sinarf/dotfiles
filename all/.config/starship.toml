@@ -1,13 +1,9 @@
 add_newline = true
 command_timeout=3000    # seems long but over a VPN, not that much apprently
 
-[battery]
-full_symbol = "🔋"
-charging_symbol = "🔌"
-discharging_symbol = "⚡"
-
-[git_branch]
-symbol = "🌱 "
+[[battery.display]]
+threshold = 20
+style = "bold red"
 
 [git_metrics]
 disabled = false
@@ -16,13 +12,12 @@ added_style = "bold blue"
 [git_status]
 ahead = "  "
 behind = "  "
-diverged = "  "
+staged = '[++\($count\)](blue)'
+diverged = "  "
 deleted = "  "
-up_to_date = "  "
 untracked = "  "
 stashed = "  "
 modified = "  "
-staged = '[++\($count\)](blue)'
 conflicted = " ﲅ "
 style = "bold blue"
 
@@ -39,9 +34,8 @@ disabled = true
 
 [python]
 python_binary = ["python3", "python2", "python"]
-style = "bold green"
+style = "bold yellow"
 pyenv_version_name = true
-detect_folders = [ "venv" ]
 
 [package]
 disabled = true
