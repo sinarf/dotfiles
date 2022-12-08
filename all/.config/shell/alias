@@ -15,7 +15,6 @@ alias chmod="chmod -v"
 alias tm="tmux attach"
 
 alias stow="stow -v2"
-alias venv=". venv/bin/activate || echo 'Could not enable venv virtual environment'"
 
 # calendar-cli
 alias todo='calendar-cli todo'
@@ -25,7 +24,10 @@ alias kal='calendar-cli calendar'
 alias vi=nvim
 alias vim=nvim
 
+alias gbc='git branch --sort=-committerdate | fzf --header Checkout | xargs git checkout'
+
 # Enable vi keybindings on remote ssh
 # alias ssh="ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes"
 alias ssh='ssh_helper.sh'
 alias pj='project_helper.sh'
+alias ipython='ipython_helper.sh'
