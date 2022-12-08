@@ -14,18 +14,17 @@ disabled = false
 added_style = "bold blue"
 
 [git_status]
-ahead = "⤴️"
-behind = "⤵️"
-diverged = "😵"
-up_to_date = "🟰"
-untracked = "🤷"
-stashed = "📦"
-modified = "✨"
+ahead = "  "
+behind = "  "
+diverged = "  "
+deleted = "  "
+up_to_date = "  "
+untracked = "  "
+stashed = "  "
+modified = "  "
 staged = '[++\($count\)](blue)'
-renamed = "🔄"
-deleted = "🗑"
-conflicted = "🙅 "
-style = "blue"
+conflicted = " ﲅ "
+style = "bold blue"
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
