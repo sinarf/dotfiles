@@ -34,7 +34,6 @@ man-pages
 mirrorlist-rankmirrors-hook
 neovide
 neovim-symlinks
-nerd-fonts-fira-code
 network-manager-applet
 nodejs
 ntp
@@ -61,15 +60,12 @@ starship
 syncthing
 tdrop
 thunar-volman
-tdrop-git
 tmux
-tmux-plugin-manager
 toot
-ttf-fira-code
+ttf-firacode-nerd
 ttf-cascadia-code
 vlc
 volnoti
-whalebird
 xclip
 xfce4-goodies
 xorg-apps
