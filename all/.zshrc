@@ -37,7 +37,7 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # 
-. ~/.config/shell/zshrc.custom
+. ${HOME}/.config/shell/zshrc.custom
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!

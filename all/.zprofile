@@ -52,3 +52,4 @@ export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$DOT_FILES/bin"
 ruby_path=$(ruby -e 'puts Gem.user_dir')/bin
 export PATH="${ruby_path}:$PATH"
 
+export NEOVIDE_FRAME='none'

@@ -6,7 +6,9 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-. "$HOME/.cargo/env"
+if [ -f "${HOME}/.cargo/env" ] ; then
+  . "$HOME/.cargo/env"
+fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f ~/.config/shell/alias ] && source ~/.config/shell/alias
@@ -16,19 +18,22 @@ alias ls='ls --color=auto'
 # makes history ingore dupplicate and command starting by space
 export HISTCONTROL=ignoreboth
 # override stuff from my default configuration
-export TERMINAL='/opt/homebrew/bin/kitty'
+
 export BROWSER='/Applications/Firefox.app/Contents/MacOS/firefox'
 
 set -o vi
-eval "$(starship init bash)"
+if command -v starship > /dev/null; then
+  eval "$(starship init bash)"
+fi
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
+if command -v brew > /dev/null; then
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
 fi
 
 PATH=/opt/homebrew/bin:$PATH
 
-alias sed='gsed'
 
 # make python 3 the default
 alias python='python3'

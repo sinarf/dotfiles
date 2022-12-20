@@ -14,5 +14,6 @@
 [ -f ~/.fzf.zsh ] && . ~/.fzf.zsh
 [ -f ~/.fzf.key-bindings ] && . ~/.fzf.key-bindings
 
-
-eval "$(starship init zsh)"
+if command -v starship; then
+  eval "$(starship init zsh)"
+fi
