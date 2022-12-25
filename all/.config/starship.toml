@@ -7,23 +7,24 @@ style = "bold red"
 
 [git_metrics]
 disabled = false
-added_style = "bold blue"
 
 [git_status]
-ahead = "  "
-behind = "  "
+format = '([ $all_status $ahead_behind ]($style) )'
+# up_to_date = '[](bold green)'
+ahead = ""
+behind = ""
 staged = '[++\($count\)](blue)'
-diverged = "  "
-deleted = "  "
-untracked = "  "
-stashed = "  "
-modified = "  "
-conflicted = " ﲅ "
-style = "bold blue"
+diverged = ""
+deleted = '[✘ ](bold red)'
+untracked = ""
+stashed = " "
+modified = ""
+conflicted = "ﲅ "
+style = "bold yellow"
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
-format = " took [$duration]($style)"
+format = " ﰌ [$duration]($style)"
 
 [hostname]
 ssh_only = false
@@ -35,9 +36,13 @@ disabled = true
 [python]
 python_binary = ["python3", "python2", "python"]
 style = "bold yellow"
+symbol = " "
 pyenv_version_name = true
 
 [package]
+disabled = true
+
+[cmake]
 disabled = true
 
 
