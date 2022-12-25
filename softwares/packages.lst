@@ -1,11 +1,8 @@
 acpi
 alsa-utils
-alternating-layouts-git
 bat
 calendar-cli
-cawbird
 deno
-ddgr
 dracula-gtk-theme
 element-desktop
 entr
@@ -35,6 +32,7 @@ mirrorlist-rankmirrors-hook
 neovide
 neovim-symlinks
 network-manager-applet
+networkmanager-dispatcher-ntpd
 nodejs
 ntp
 mdcat
