@@ -397,7 +397,7 @@ exec --no-startup-id  xss-lock -- i3lock -i /home/sinarf/Sync/pics/background/ar
 # launch polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 # nice auto layout for i3
-exec --no-startup-id alternating_layouts.py
+exec --no-startup-id ${HOME}/.dotfiles/bin/alternating_layouts.py
 # handle the wallpaper
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 # clipboard manager
