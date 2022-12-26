@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-paru -Syu --needed --noconfirm bluez blueman
+paru -Syu --needed --noconfirm bluez blueman bluez-plugins
 
 echo "Enabling bluetooth service"
 sudo systemctl status bluetooth.service
