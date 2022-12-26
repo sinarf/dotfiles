@@ -3,7 +3,7 @@ configuration {
   modi: "window,drun,ssh,combi,run";
   font: "Cascadia Code 16";
   terminal: "kitty";
-  separator-style: "solid";
+  /* separator-style: "solid"; */
   combi-modi: "window,drun,ssh";
 }
-@theme "~/.config/rofi/dracula2.rasi"
+@theme "~/.config/rofi/rounded-nord-dark.rasi"
