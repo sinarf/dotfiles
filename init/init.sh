@@ -73,8 +73,7 @@ sudo groupadd -r games
 
 sudo vi /etc/pacman.conf /etc/lightdm/lightdm.conf
 sudo cp -v "${DOT_FILES}/init/00-keyboard.conf" /etc/X11/xorg.conf.d/
-echo "Setting tmux plugin manager"
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 "$DOT_FILES/init/install_custom_neovim_config.sh"
 "$DOT_FILES/init/install_bluetooth.sh"
 
