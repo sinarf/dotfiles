@@ -27,7 +27,7 @@ alias vim=nvim
 alias gbc='git branch --sort=-committerdate | fzf --header Checkout | xargs git checkout'
 
 # Enable vi keybindings on remote ssh
-alias ssh="ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes"
-alias SSH='ssh_helper.sh'
+# alias ssh="ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes"
+alias ssh='ssh_helper.sh'
 alias pj='project_helper.sh'
 alias ipython='ipython_helper.sh'
