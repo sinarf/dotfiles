@@ -14,11 +14,11 @@ format = '([ $all_status $ahead_behind ]($style) )'
 ahead = ""
 behind = ""
 staged = '[++\($count\)](blue)'
-diverged = ""
+diverged = " "
 deleted = '[✘ ](bold red)'
-untracked = ""
+untracked = " "
 stashed = " "
-modified = ""
+modified = " "
 conflicted = "ﲅ "
 style = "bold yellow"
 
@@ -45,4 +45,8 @@ disabled = true
 [cmake]
 disabled = true
 
-
+[custom.bash]
+description = "Display the bash version, if using bash"
+command = 'echo ${BASH_VERSION}'
+when = 'if [ -z ${BASH_VERSION} ]; then exit 1; fi'
+format = '[bash version: ($output )]($style)'
