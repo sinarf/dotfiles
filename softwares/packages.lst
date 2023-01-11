@@ -27,6 +27,7 @@ network-manager-applet
 networkmanager-dispatcher-ntpd
 nodejs
 noto-fonts-emoji
+npm
 ntp
 mdcat
 pavucontrol
@@ -44,9 +45,11 @@ ripgrep
 ruby
 ruby-neovim
 shfmt
+shellcheck
 starship
 syncthing
 tdrop
+tig
 tmux
 toot
 ttf-firacode-nerd
