@@ -13,7 +13,8 @@ if [ ${#} -eq 0 ]; then
   echo "No file provided!"
   exit ${error_missing_parameter}
 else
-  file_list=$@
+  file_list=$*
+  echo "List of files to clean: ${file_list}"
 fi
 
 if ! command -v shellcheck >/dev/null; then
@@ -31,7 +32,7 @@ if ! command -v patch >/dev/null; then
   exit ${error_no_patch}
 fi
 
-for file in "${file_list}"; do
+for file in ${file_list}; do
   if [ -f "${file}" ]; then
     echo "Fixing ${file}...."
     shellcheck -f diff "${file}" | patch "${file}"
