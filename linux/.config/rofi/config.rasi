@@ -1,9 +1,10 @@
 /* vim:ft=css */
 configuration {
-  modi: "window,drun,ssh,combi,run";
+  modi: "window,drun,ssh,combi,run,power-menu:rofi-power-menu";
   font: "Cascadia Code 16";
   terminal: "kitty";
   /* separator-style: "solid"; */
-  combi-modi: "window,drun,ssh";
+  combi-modi: "window,drun,ssh,filebrowser,power-menu";
+  show-icons: true;
 }
 @theme "~/.config/rofi/rounded-nord-dark.rasi"
