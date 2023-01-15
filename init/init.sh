@@ -21,10 +21,9 @@ else
   popd >/dev/null || exit 1
   rm -rf "$tmp_paru_src_dir"
 fi
-install_all_softwares.sh
 
 echo "Install what needed for dotfile setup..."
-paru -Syu --needed --noconfirm git stow zsh firefox tree
+paru -Syu --needed --noconfirm git stow zsh firefox tree kitty neovim-symlinks
 if [ -f "$ssh_public_key_file" ]; then
   echo "ssh public key already created."
 else
