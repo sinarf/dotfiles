@@ -56,3 +56,8 @@ if [ "$(uname)" = Darwin ]; then
   alias vi='nvim'
   alias vim='nvim'
 fi
+
+secret_file="$HOME/.local-env"
+if [ -f $secret_file ]; then
+  . $secret_file
+fi

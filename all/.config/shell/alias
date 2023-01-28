@@ -31,3 +31,11 @@ alias gbc='git branch --sort=-committerdate | fzf --header Checkout | xargs git 
 alias ssh='ssh_helper.sh'
 alias pj='project_helper.sh'
 alias ipython='ipython_helper.sh'
+alias ptw='pytest-watch.sh'
+
+# tmux aliases
+alias tmright="tmux split-window -h -c "#{pane_current_path}""
+alias tmleft="tmux split-window -h -c "#{pane_current_path}" && tmux swap-pane -U"
+
+alias tmdown="tmux split-window -c "#{pane_current_path}""
+alias tmup="tmux split-window -c "#{pane_current_path}" && tmux swap-pane -U"
