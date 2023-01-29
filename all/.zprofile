@@ -45,8 +45,6 @@ export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$DOT_FILES/bin"
 ruby_path=$(ruby -e 'puts Gem.user_dir')/bin
 export PATH="${ruby_path}:$PATH"
 
-export NEOVIDE_FRAME='none'
-
 ## Mac specific stuffs
 if [ "$(uname)" = Darwin ]; then
   [ -f /opt/homebrew/sbin ] && export PATH="/opt/homebrew/sbin:$PATH"
@@ -55,6 +53,9 @@ if [ "$(uname)" = Darwin ]; then
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home/
   alias vi='nvim'
   alias vim='nvim'
+  export NEOVIDE_FRAME='transparent'
+else
+  export NEOVIDE_FRAME='none'
 fi
 
 secret_file="$HOME/.local-env"
