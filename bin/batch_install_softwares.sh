@@ -9,9 +9,10 @@ softwares_dir="${DOT_FILES}/softwares"
 install_software_from_file() {
   local filename="${1}"
   echo "Installation of package from file: ${filename}"
-  softwares=$(cat "${filename}")
-  paru -Syu "${softwares}"
+  readarray -t softwares < "${filename}"
+  paru -Syu --needed --noconfirm "${softwares[@]}"
 }
+
 install_all(){
     echo "Install everything"
     for file in "${softwares_dir}"/*; do
