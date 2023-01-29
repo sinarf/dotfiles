@@ -21,12 +21,10 @@ luarocks
 man-db
 man-pages
 mirrorlist-rankmirrors-hook
-neovim-symlinks
 network-manager-applet
 networkmanager-dispatcher-ntpd
 nodejs
 noto-fonts-emoji
-npm
 ntp
 mdcat
 pavucontrol
@@ -37,12 +35,9 @@ prettier
 python
 python-black
 python-gobject
-python-pipenv
-python-pynvim
 remmina
 ripgrep
 ruby
-ruby-neovim
 shfmt
 shellcheck
 starship
