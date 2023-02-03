@@ -53,5 +53,6 @@ yarn
 youtube-dl
 zip
 zsh
+zsh-completions
 zsh-syntax-highlighting
 zsh-vi-mode
