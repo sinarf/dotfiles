@@ -12,5 +12,4 @@ pipenv --rm || echo "Cannot clean virtual env, it happens when the virtual env d
 
 pipenv sync --dev
 pipenv run pip install -e .
-pipenv run pytest-watch.sh
 pipenv run "${SHELL}"
