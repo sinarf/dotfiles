@@ -8,6 +8,9 @@ lazygit
 luarocks
 npm
 python
+python38
+python39
+python311
 python-debugpy
 python-pynvim
 ruby-neovim
