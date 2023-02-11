@@ -24,7 +24,7 @@ alias kal='calendar-cli calendar'
 alias vi=nvim
 alias vim=nvim
 
-alias gbc='git branch --sort=-committerdate | fzf --header Checkout | xargs git checkout'
+alias gbc='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1}" --pointer="" | xargs git checkout'
 
 # Enable vi keybindings on remote ssh
 # alias ssh="ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes"
@@ -39,3 +39,5 @@ alias tmleft="tmux split-window -h -c "#{pane_current_path}" && tmux swap-pane -
 
 alias tmdown="tmux split-window -c "#{pane_current_path}""
 alias tmup="tmux split-window -c "#{pane_current_path}" && tmux swap-pane -U"
+
+alias tldr='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
