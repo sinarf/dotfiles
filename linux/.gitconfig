@@ -27,3 +27,24 @@
 	rebase = true
 [init]
 	defaultBranch = production
+
+[color]
+	diff = always
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+	; pager = true
+	grep = auto
+	decorate = auto
+	showbranch = auto
+[color "diff"]
+	meta = blue
+	old = red strike
+	new = green italic
+	context = yellow bold
+[color "branch"]
+	local = green
+	current = brightwhite yellow
+	remote = normal blue
+	upstream = brightwhite cyan
