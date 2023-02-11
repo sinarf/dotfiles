@@ -25,6 +25,7 @@ style = "bold yellow"
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
 format = " ﰌ [$duration]($style)"
+style = "red"
 
 [hostname]
 ssh_only = false
@@ -35,9 +36,10 @@ disabled = true
 
 [python]
 python_binary = ["python3", "python2", "python"]
-style = "bold yellow"
-symbol = " "
-pyenv_version_name = true
+style = "blue"
+symbol = " " 
+pyenv_version_name = false
+detect_extensions = []
 
 [package]
 disabled = true
