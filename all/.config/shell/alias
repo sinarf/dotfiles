@@ -41,3 +41,6 @@ alias tmdown="tmux split-window -c "#{pane_current_path}""
 alias tmup="tmux split-window -c "#{pane_current_path}" && tmux swap-pane -U"
 
 alias tldr='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+
+alias update_nvim_plugins="nvim --headless +PackerSync +q"
+alias tut="tmux new-window tut && tmux rename-window tut"
