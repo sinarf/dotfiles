@@ -44,3 +44,5 @@ alias tldr='tldr --list | fzf --preview "tldr {1} --color=always" --preview-wind
 
 alias update_nvim_plugins="nvim --headless +PackerSync +q"
 alias tut="tmux new-window tut && tmux rename-window tut"
+
+alias tpwdown="tmux split-window -l 20 pipenv run ptw --clear"
