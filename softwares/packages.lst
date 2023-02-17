@@ -1,6 +1,7 @@
 acpi
 alsa-utils
 bat
+base-devel
 deno
 entr
 etckeeper

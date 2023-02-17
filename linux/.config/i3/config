@@ -31,6 +31,8 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym Mod1+space exec --no-startup-id rofi -show combi
+bindsym $mod+x exec rofi -show power-menu -modi power-menu:rofi-power-menu
+
 # dropdowm terminal 
 bindsym $mod+z exec --no-startup-id ~/.dotfiles/bin/popup_terminal.sh
 bindsym Ctrl+Escape exec --no-startup-id ~/.dotfiles/bin/popup_terminal.sh
