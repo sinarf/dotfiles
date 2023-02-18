@@ -9,7 +9,7 @@ if [ -f "${HOME}/.cargo/env" ] ; then
 fi
 
 if [ -d "${HOME}/.cargo/bin" ] ; then
-  export PATH="$PATH:~/.cargo/bin"
+  export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
 # my dotfiles are here
@@ -40,7 +40,7 @@ else
 fi
 
 # add local bin directory to the path
-export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$DOT_FILES/bin"
+export PATH="$HOME/bin:$HOME/.local/bin:$DOT_FILES/bin:$PATH"
 # Adds ruby userdir to the PATH
 ruby_path=$(ruby -e 'puts Gem.user_dir')/bin
 export PATH="${ruby_path}:$PATH"
@@ -49,8 +49,7 @@ export PATH="${ruby_path}:$PATH"
 if [ "$(uname)" = Darwin ]; then
   [ -f /opt/homebrew/sbin ] && export PATH="/opt/homebrew/sbin:$PATH"
   [ -f /opt/homebrew/bin ] && export PATH="/opt/homebrew/bin:$PATH"
-  [ -f /opt/homebrew/opt/openjdk@11/bin ] && export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home/
+  [ -d /Users/mblavin/Library/Python/3.9/bin ] && export PATH="/Users/mblavin/Library/Python/3.9/bin:$PATH" 
   alias vi='nvim'
   alias vim='nvim'
   export NEOVIDE_FRAME='transparent'
@@ -58,6 +57,8 @@ else
   export NEOVIDE_FRAME='none'
 fi
 
+# create virtual env in project
+export PIPENV_VENV_IN_PROJECT=1
 secret_file="$HOME/.local-env"
 if [ -f $secret_file ]; then
   . $secret_file
