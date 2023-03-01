@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 if command -v ptw >/dev/null; then
-  kill $(pgrep -f ptw) > /dev/null || true
   tmux split-window -l 20 ptw --clear
   tmux last-pane
 else
