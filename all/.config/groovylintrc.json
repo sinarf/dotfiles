@@ -1,0 +1,46 @@
+{
+  "extends": "recommended",
+  "rules": {
+    "convention.CompileStatic": "off",
+    "convention.NoDef": "off",
+    "convention.VariableTypeRequired": {
+      "ignoreVariableNames": "_",
+      "severity": "warning"
+    },
+    "convention.MethodReturnTypeRequired": "info",
+    "convention.ImplicitClosureParameter": "off",
+    "dry.DuplicateListLiteral": "off",
+    "dry.DuplicateMapLiteral": "info",
+    "dry.DuplicateNumberLiteral": {
+      "ignoreNumbers": "0,1,-1",
+      "severity": "info"
+    },
+    "exceptions.ThrowException": "info",
+    "exceptions.ThrowNullPointerException": "info",
+    "exceptions.ThrowRuntimeException": "info",
+    "exceptions.ThrowThrowable": "info",
+    "braces.IfStatementBraces": "on",
+    "formatting.BracesForIfElse": "on",
+    "formatting.SpaceAfterOpeningBrace": "off",
+    "formatting.SpaceBeforeOpeningBrace": "off",
+    "formatting.SpaceAroundMapEntryColon": "off",
+    "formatting.Indentation": {
+      "spacesPerIndentLevel": 2,
+      "severity": "info"
+    },
+    "size.NestedBlockDepth": {
+      "maxNestedBlockDepth": 10
+    },
+    "unused.UnusedVariable": {
+      "ignoreVariableNames": "_"
+    },
+    "naming.VariableName": {
+      "ignoreVariableNames": "_"
+    },
+    "imports.NoWildcardImports": "off",
+    "groovyism.ExplicitCallToEqualsMethod": "off",
+    "groovyism.GStringExpressionWithinString": "on",
+    "unnecessary.UnnecessaryGetter": "on",
+    "logging.Println": "off"
+  }
+}
