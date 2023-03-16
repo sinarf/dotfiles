@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 server=${1}
-if [[ $# -gt "1" ]]; then
+if [[ $# -gt "2" ]]; then
   ssh "$@"
 elif [ -z "${TMUX}" ]; then
   ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes "${server}"
