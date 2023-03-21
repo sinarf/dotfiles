@@ -1,11 +1,11 @@
 #
 # ~/.bashrc
 #
+PATH=/opt/homebrew/bin:$PATH
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
 if [ -f "${HOME}/.cargo/env" ] ; then
   . "$HOME/.cargo/env"
 fi
@@ -32,9 +32,9 @@ if command -v brew > /dev/null; then
   fi
 fi
 
-PATH=/opt/homebrew/bin:$PATH
 
 
+alias ls='ls --color=auto'
 # make python 3 the default
 alias python='python3'
 
