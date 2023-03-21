@@ -1,5 +1,5 @@
 {
-  "extends": "recommended",
+  "extends": "recommended-jenkinsfile",
   "rules": {
     "convention.CompileStatic": "off",
     "convention.NoDef": "off",

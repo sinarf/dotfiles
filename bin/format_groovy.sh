@@ -5,4 +5,4 @@ if ! command -v npm-groovy-lint >/dev/null; then
   exit 20
 fi
 
-npm-groovy-lint --output /tmp/npm-groovy-lint.json --format "$1"
+npm-groovy-lint --config "${HOME}"/.config/groovylintrc.json --output /tmp/npm-groovy-lint.json --format "$1"
