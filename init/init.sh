@@ -23,7 +23,7 @@ else
 fi
 
 echo "Install what needed for dotfile setup..."
-paru -Syu --needed --noconfirm git stow zsh firefox tree kitty neovim-symlinks
+paru -Syu --needed --noconfirm git stow zsh firefox tree kitty neovim
 if [ -f "${ssh_public_key_file}" ]; then
   echo "ssh public key already created."
 else
@@ -34,11 +34,7 @@ fi
 echo "Register the public ssh key in github account"
 firefox https://github.com/settings/keys
 cat "${ssh_public_key_file}"
-read -p "Confirm that this key is registered on github before continuing...[<Space>]" -n 1 -r
-if [[ ! ${REPLY} =~ ^ $ ]]; then
-  echo "It is your choice, but I quit!"
-  exit 1
-fi
+read -p "Confirm that this key is registered on github before continuing..." -n 1 -r
 
 echo
 echo "Setting up dotfiles in ${DOT_FILES}"
@@ -65,13 +61,12 @@ tree "${backup_dir}"
 # create the applications directory so stow will link the the files not the directory
 mkdir -pv "${HOME}"/.local/share/applications/
 update_dotfiles.sh
+
+sudo vim /etc/pacman.conf /etc/lightdm/lightdm.conf
+sudo cp -v "${DOT_FILES}/init/00-keyboard.conf" /etc/X11/xorg.conf.d/
 sudo usermod --shell /bin/zsh "${USER}"
 sudo groupadd -r autologin
 sudo gpasswd -a "${USER}" autologin
-sudo groupadd -r games
-
-sudo vi /etc/pacman.conf /etc/lightdm/lightdm.conf
-sudo cp -v "${DOT_FILES}/init/00-keyboard.conf" /etc/X11/xorg.conf.d/
 
 "${DOT_FILES}/init/install_custom_neovim_config.sh"
 "${DOT_FILES}/init/install_bluetooth.sh"
