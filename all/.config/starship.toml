@@ -9,22 +9,21 @@ style = "bold red"
 disabled = false
 
 [git_status]
-format = '([ $all_status $ahead_behind ]($style) )'
-# up_to_date = '[](bold green)'
+format = '([ $all_status ]($style) )'
+up_to_date = '[](bold green)'
 ahead = ""
 behind = ""
 staged = '[++\($count\)](blue)'
 diverged = " "
 deleted = '[✘ ](bold red)'
 untracked = " "
-stashed = " "
-modified = " "
-conflicted = "ﲅ "
+stashed = "󰪶 "
+modified = ""
 style = "bold yellow"
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
-format = " ﰌ [$duration]($style)"
+format = " 󰑮 [$duration]($style)"
 style = "red"
 
 [hostname]
@@ -37,7 +36,7 @@ disabled = true
 [python]
 python_binary = ["python3", "python2", "python"]
 style = "blue"
-symbol = " " 
+symbol = "" 
 pyenv_version_name = false
 detect_extensions = []
 
