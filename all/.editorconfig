@@ -5,7 +5,6 @@ root = true
 [*]
 end_of_line = lf
 indent_style = space
-charset = "utf-8"
 trim_trailling_whitespace = true
 insert_final_new_line = true
 
