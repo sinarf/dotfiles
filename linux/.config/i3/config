@@ -424,7 +424,6 @@ exec --no-startup-id signal-desktop -- %u --start-in-tray
 exec --no-startup-id protonmail-bridge --no-window
 exec --no-startup-id slack -u
 exec --no-startup-id element-desktop --hidden
-exec --no-startup-id steam -silent
 # making this one wait a bit because it starts to fast and the systray is not availlaible yet
 exec --no-startup-id sleep 10; syncthingtray
 
