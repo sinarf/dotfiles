@@ -46,8 +46,8 @@ export PATH="${ruby_path}:$PATH"
 
 ## Mac specific stuffs
 if [ "$(uname)" = Darwin ]; then
-  [ -f /opt/homebrew/sbin ] && export PATH="/opt/homebrew/sbin:$PATH"
-  [ -f /opt/homebrew/bin ] && export PATH="/opt/homebrew/bin:$PATH"
+  [ -d /opt/homebrew/sbin ] && export PATH="/opt/homebrew/sbin:$PATH"
+  [ -d /opt/homebrew/bin ] && export PATH="/opt/homebrew/bin:$PATH"
   [ -d /Users/mblavin/Library/Python/3.9/bin ] && export PATH="/Users/mblavin/Library/Python/3.9/bin:$PATH" 
   alias vi='nvim'
   alias vim='nvim'
