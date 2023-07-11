@@ -1,4 +1,4 @@
-# k k author : Michel Blavin AKA sinarf
+# author : Michel Blavin AKA sinarf
 #
 # this file contains all the path and variable needed for a linux installation
 #
@@ -13,6 +13,17 @@
 [ -f /usr/share/fzf/completion.zsh ] && . /usr/share/fzf/completion.zsh
 [ -f ~/.fzf.zsh ] && . ~/.fzf.zsh
 [ -f ~/.fzf.key-bindings ] && . ~/.fzf.key-bindings
+
+if [[ -n $TMUX ]] && [[ -z "$NVIM" ]]; then
+  # when I open a new window in tmux ant I am in a git repository, opens a popup to do a git fetch
+  # But I don't want it when I open a terminal in nvim
+  if git rev-parse -q --short HEAD 1>&2 2>/dev/null; then
+    # Never forget to fetch when in a git repository
+    tmux popup -w 80% -h 80% -d $(pwd) -E 'git fetch && sleep 1 || true' &
+    disown
+    clear  # removes artifacts from the previous command
+  fi
+fi
 
 if command -v starship >/dev/null; then
   eval "$(starship init zsh)"
