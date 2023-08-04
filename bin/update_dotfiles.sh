@@ -22,11 +22,11 @@ else
 fi
 
 echo "Linking dotfiles..."
-stow -v1 all
+stow -v1 --dotfiles all
 if [[ "$(uname)" == Darwin ]] ; then
-  stow -v1 mac
+  stow -v1 --dotfiles mac
 else
-  stow -v1 linux
+  stow -v1 --dotfiles linux
 fi
 if ${pulled} ; then
   echo "Pushing local modifications..."
