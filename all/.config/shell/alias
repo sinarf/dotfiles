@@ -34,11 +34,11 @@ alias ipython='ipython_helper.sh'
 alias ptw='pytest-watch.sh'
 
 # tmux aliases
-alias tmright="tmux split-window -h -c "#{pane_current_path}""
-alias tmleft="tmux split-window -h -c "#{pane_current_path}" && tmux swap-pane -U"
+alias tmright="tmux split-window -h -c '#{pane_current_path}'"
+alias tmleft="tmux split-window -h -c '#{pane_current_path}' && tmux swap-pane -U"
 
-alias tmdown="tmux split-window -c "#{pane_current_path}""
-alias tmup="tmux split-window -c "#{pane_current_path}" && tmux swap-pane -U"
+alias tmdown="tmux split-window -c '#{pane_current_path}'"
+alias tmup="tmux split-window -c '#{pane_current_path}' && tmux swap-pane -U"
 
 alias tldr='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 
