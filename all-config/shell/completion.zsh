@@ -1,7 +1,7 @@
 # COMPLETION
 autoload -Uz compinit
 compinit
-
+zstyle ':completion:*' completer _complete _ignored _files
 #allow tab completion in the middle of a word
 setopt COMPLETE_IN_WORD
 # autocompletion of command line switches for aliases

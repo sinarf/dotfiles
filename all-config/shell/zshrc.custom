@@ -7,7 +7,9 @@
 # [ -f ~/.config/shell/theme.zsh ] && . ~/.config/shell/theme.zsh
 [ -f ~/.config/shell/completion.zsh ] && . ~/.config/shell/completion.zsh
 [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+[ -f /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh ] && . /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
+[ -f /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && . /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f  /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh ] && .  /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 ## some fzf awsomeness
 [ -f /usr/share/fzf/key-bindings.zsh ] && . /usr/share/fzf/key-bindings.zsh
 [ -f /usr/share/fzf/completion.zsh ] && . /usr/share/fzf/completion.zsh
@@ -24,7 +26,9 @@ if [[ -n $TMUX ]] && [[ -z "$NVIM" ]]; then
     clear  # keeps the terminal clean
   fi
 fi
-
+if command -v tempo >/dev/null; then
+  eval "$(tempo autocomplete:script zsh)"
+fi
 if command -v starship >/dev/null; then
   eval "$(starship init zsh)"
 fi

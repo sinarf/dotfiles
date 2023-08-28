@@ -22,11 +22,13 @@ else
 fi
 
 echo "Linking dotfiles..."
-stow -v1 all
+stow -v1 --dotfiles all
+stow -v1 --target="${HOME}"/.config all-config
 if [[ "$(uname)" == Darwin ]] ; then
-  stow -v1 mac
+  stow -v1 --dotfiles mac
 else
-  stow -v1 linux
+  stow -v1 --dotfiles linux
+  stow -v1 --target="${HOME}"/.config linux-config
 fi
 if ${pulled} ; then
   echo "Pushing local modifications..."
