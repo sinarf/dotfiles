@@ -361,14 +361,12 @@ mode "$mode_gaps_outer" {
 }
 
 ## some application run on some specific workspace.
-assign [class="Steam"] $ws7
+assign [class="steam"] $ws7
 #  video stuffs 
 assign [class="Brave-browser"] $ws4
 # assign [title="Picture-in-Picture"] $ws4
 
-# social
-assign [class="Whalebird"] $ws9
-assign [class="Cawbird"] $ws9
+
 # chats
 assign [class="Signal"] $ws0
 assign [class="Slack"] $ws0
