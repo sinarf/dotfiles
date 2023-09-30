@@ -29,6 +29,7 @@ if [[ "$(uname)" == Darwin ]] ; then
 else
   stow -v1 --dotfiles linux
   stow -v1 --target="${HOME}"/.config linux-config
+  stow -v1 --target="${HOME}"/.local linux-local
 fi
 if ${pulled} ; then
   echo "Pushing local modifications..."
