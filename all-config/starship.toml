@@ -52,3 +52,17 @@ description = "Display the bash version, if using bash"
 command = 'echo ${BASH_VERSION}'
 when = 'if [ -z ${BASH_VERSION} ]; then exit 1; fi'
 format = '[bash version: ($output )]($style)'
+
+[ruby]
+symbol= '󰴭 '
+
+[sudo]
+disabled = false
+
+[status]
+style = 'bold'
+symbol = '🔴 '
+success_symbol = '🟢 '
+format = '[$symbol$int $common_meaning]($style) '
+map_symbol = true
+disabled = false
