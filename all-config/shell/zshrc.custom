@@ -32,3 +32,12 @@ fi
 if command -v starship >/dev/null; then
   eval "$(starship init zsh)"
 fi
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+SDKMAN_DIR="$HOME/.sdkman"
+if [ -d $SDKMAN_DIR ]; then
+  export SDKMAN_DIR
+  [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+fi
+
