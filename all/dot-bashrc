@@ -1,7 +1,5 @@
 #
 # ~/.bashrc
-#
-PATH=/opt/homebrew/bin:$PATH
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -27,6 +25,8 @@ if command -v starship >/dev/null; then
 fi
 
 if command -v brew >/dev/null; then
+        homebrew_bin_path=$(brew --prefix)/bin
+        PATH=$homebrew_bin_path:$PATH
         if [ -f $(brew --prefix)/etc/bash_completion ]; then
                 . $(brew --prefix)/etc/bash_completion
         fi
@@ -42,6 +42,3 @@ alias vim='nvim'
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
