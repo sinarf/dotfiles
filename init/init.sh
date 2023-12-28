@@ -46,7 +46,7 @@ mkdir -pv "${backup_dir}"
 echo "Moving files that might have been created in the installation process"
 
 # TODO find a more robust way to do this
-files_to_backup=("${HOME}/.bashrc" "${HOME}/.bash_profile" "${HOME}/.config/i3")
+files_to_backup=("${HOME}/.bashrc" "${HOME}/.bash_profile" "${HOME}/.config/i3/config")
 for file in "${files_to_backup[@]}"; do
   echo "Backup ${file}"
   backup_file="${backup_dir}${file}"
