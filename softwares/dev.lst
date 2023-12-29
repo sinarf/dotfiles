@@ -9,11 +9,9 @@ lazygit
 luarocks
 npm
 python
-python38
-python39
-python311
 python-debugpy
 python-pynvim
+rmtrash
 ruby-neovim
 tig
 yarn
