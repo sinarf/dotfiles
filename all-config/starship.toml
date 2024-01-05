@@ -28,11 +28,11 @@ format = " 󰑮 [$duration]($style)"
 style = "red"
 
 [hostname]
-ssh_only = false
+ssh_only = true
 format = "<[$hostname]($style)>"
 trim_at = "-"
 style = "bold dimmed white"
-disabled = true
+disabled = false
 
 [python]
 python_binary = ["python3", "python2", "python"]
