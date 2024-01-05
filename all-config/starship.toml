@@ -61,8 +61,7 @@ disabled = false
 
 [status]
 style = 'bold'
-symbol = '🔴 '
-success_symbol = '🟢 '
-format = '[$symbol$int $common_meaning]($style) '
+symbol = '[󰀦 -](bold yellow)'
+format = '[$symbol$int ]($style) '
 map_symbol = true
 disabled = false
