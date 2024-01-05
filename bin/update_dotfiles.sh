@@ -4,7 +4,7 @@
 
 set -eu  # stop on first error
 
-if [ -z "${DOT_FILES}" ]; then
+if [ -z "${DOT_FILES:-}" ]; then
     echo "the DOT_FILES environement variable should be set up for this script to work"
     echo "That variable won't be availlable on the first run, let's fix it for this time."
     dot_files=$(dirname "$0")/..
