@@ -59,7 +59,7 @@ echo "Files that have been backuped, just in case, it should be ok to remove it"
 tree "${backup_dir}"
 
 # create the applications directory so stow will link the the files not the directory
-mkdir -pv "${HOME}"/.local/share/applications/
+mkdir -pv "${HOME}"/.local/share/applications/ "$HOME/git/sinarf" "$HOME/git/work"
 update_dotfiles.sh
 
 sudo vim /etc/pacman.conf /etc/lightdm/lightdm.conf
@@ -70,5 +70,9 @@ sudo gpasswd -a "${USER}" autologin
 
 "${DOT_FILES}/init/install_custom_neovim_config.sh"
 "${DOT_FILES}/init/install_bluetooth.sh"
+
+batch_install_softwares.sh packages.lst
+batch_install_softwares.sh utilities.lst
+batch_install_softwares.sh desktop.lst
 
 echo "Might be a good time to reboot..."
