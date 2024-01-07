@@ -8,10 +8,9 @@ if [[ -d $project_directory ]]; then
   mkdir -pv "$project_directory"
 fi
 
-default_directories=(
-  "$HOME/.dotfiles"
-  "$HOME/.config/nvim"
-)
+default_directories="$HOME/.dotfiles
+$HOME/.config/nvim"
+
 
 project_directories=$(find "$project_directory" -maxdepth 4 -type d -name .git -exec dirname {} \;)
 
