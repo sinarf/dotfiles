@@ -16,16 +16,6 @@
 [ -f ~/.fzf.zsh ] && . ~/.fzf.zsh
 [ -f ~/.fzf.key-bindings ] && . ~/.fzf.key-bindings
 
-if [[ -n $TMUX ]] && [[ -z "$NVIM" ]]; then
-  # when I open a new window in tmux ant I am in a git repository, opens a popup to do a git fetch
-  # But I don't want it when I open a terminal in nvim
-  if git rev-parse -q --short HEAD 1>&2 2>/dev/null; then
-    # Never forget to fetch when in a git repository
-    tmux popup -B -w 80% -h 80% -d $(pwd) -E 'bash -c "echo -e \"\e[34m Git repository detected, fetching...\" && git fetch && sleep 1 || true"' &
-    disown # eliminate the message when process ends.
-    clear  # keeps the terminal clean
-  fi
-fi
 if command -v tempo >/dev/null; then
   eval "$(tempo autocomplete:script zsh)"
 fi
