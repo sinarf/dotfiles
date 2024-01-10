@@ -2,7 +2,7 @@
 Name=Errand lists
 Comment=Update errands lists
 TryExec=nvim
-Exec=nvim Sync/todo.txt/errand/Errands.lst
+Exec=nvim Sync/shop/Errands.lst
 Terminal=true
 Type=Application
 Keywords=Text;editor;
