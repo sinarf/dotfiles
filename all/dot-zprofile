@@ -28,7 +28,6 @@ else
 fi
 
 export TERMINAL='kitty'
-export BROWSER='firefox'
 # EDITOR
 export EDITOR='nvim'
 sdk_java_dir="~/.sdkman/candidates/java/current"
