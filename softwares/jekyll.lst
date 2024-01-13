@@ -1,5 +1,5 @@
 jekyll
-ruby-minima
-ruby-jekyll-paginate
-ruby-jekyll-gist
 ruby-jekyll-feed
+ruby-jekyll-gist
+ruby-jekyll-paginate
+ruby-minima
