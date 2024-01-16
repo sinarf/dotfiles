@@ -70,3 +70,4 @@ disabled = false
 description = "Display a warning when a fetch is needed"
 when = '! git_remote_status.sh' 
 format = '[fetch please....]($style)'
+disabled = true
