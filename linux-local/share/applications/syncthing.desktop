@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Syncthing
+Comment=Open Syncthing local instance
+TryExec=xdg-open
+Exec=xdg-open http://localhost:8384/#
+Terminal=false 
+Type=Application
+Keywords=Utils;
+Icon=Syncthing
+Categories=Utility;
+StartupNotify=false
+
