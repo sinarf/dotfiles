@@ -26,12 +26,11 @@ alias vim=nvim
 
 alias gbc='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1}" --pointer="" | xargs git checkout'
 
-# Enable vi keybindings on remote ssh
-# alias ssh="ssh -o RemoteCommand='bash -o vi' -o RequestTTY=yes"
 alias ssh='ssh_helper.sh'
 alias pj='project_helper.sh'
 alias ipython='ipython_helper.sh'
 alias ptw='pytest-watch.sh'
+alias ngit='nvim -c Neogit'
 
 # tmux aliases
 alias tmright="tmux split-window -h -c '#{pane_current_path}'"
