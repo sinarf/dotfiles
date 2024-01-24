@@ -17,8 +17,7 @@ project_directories=$(find "$project_directory" -maxdepth 4 -type d -name .git -
 
 project=$(echo "${default_directories[@]}" "$project_directories" | fzf)
 if [[ -n ${project} ]]; then
-  tmux new-window -c "${project}"
-  tmux rename-window "$(basename "${project}")"
+  tmux new-window -n "$(basename "${project}")" -c "${project}"
 else
   echo "No project selected, doing nothing..."
 fi
