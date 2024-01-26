@@ -10,6 +10,7 @@ luarocks
 npm
 python
 python-debugpy
+python-pyenv
 python-pynvim
 rmtrash
 ruby-neovim
