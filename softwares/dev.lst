@@ -8,9 +8,9 @@ jdk-temurin
 lazygit
 luarocks
 npm
+pyenv
 python
 python-debugpy
-python-pyenv
 python-pynvim
 rmtrash
 ruby-neovim

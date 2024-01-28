@@ -10,15 +10,15 @@ disabled = true
 
 [git_status]
 format = '([ $all_status $ahead_behind ]($style) )'
-ahead = ""
-behind = ""
+ahead = "󰁠"
+behind = ""
 staged = '[++\($count\)](blue)'
 diverged = " "
-deleted = '[✘ ](bold red)'
-untracked = " "
-stashed = "󰪶 "
-modified = " "
-conflicted = " "
+deleted =  '[󰍷 ](red)'
+untracked = "[󰐙](green)"
+stashed = " "
+modified = "[󰣕 ](blue)"
+conflicted = "[󱚠](red)"
 style = "bold yellow"
 
 [cmd_duration]
