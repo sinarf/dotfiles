@@ -11,6 +11,7 @@ npm
 pyenv
 python
 python-debugpy
+python-pipenv
 python-pynvim
 rmtrash
 ruby-neovim
