@@ -14,9 +14,9 @@
 ## some fzf awsomeness
 [ -f /usr/share/fzf/key-bindings.zsh ] && . /usr/share/fzf/key-bindings.zsh
 [ -f /usr/share/fzf/completion.zsh ] && . /usr/share/fzf/completion.zsh
+[ -f /usr/share/fzf/fzf-extras.zsh ] && . /usr/share/fzf/fzf-extras.zsh
 [ -f ~/.fzf.zsh ] && . ~/.fzf.zsh
 [ -f ~/.fzf.key-bindings ] && . ~/.fzf.key-bindings
-
 if command -v tempo >/dev/null; then
   eval "$(tempo autocomplete:script zsh)"
 fi
