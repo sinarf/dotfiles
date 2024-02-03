@@ -7,4 +7,4 @@ configuration {
   combi-modi: "window,drun,ssh,filebrowser,power-menu";
   show-icons: true;
 }
-@theme "~/.config/rofi/rounded-nord-dark.rasi"
+@theme "~/.config/rofi/catppuccin-mocha.rasi"
