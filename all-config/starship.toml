@@ -15,7 +15,7 @@ behind = ""
 staged = '[++\($count\)](blue)'
 diverged = " "
 deleted =  '[󰍷 ](red)'
-untracked = "[󰐙](green)"
+untracked = "[󰐙 ](green)"
 stashed = " "
 modified = "[󰣕 ](blue)"
 conflicted = "[󱚠](red)"
@@ -26,13 +26,6 @@ min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
 format = " 󰑮 [$duration]($style)"
 style = "red"
 
-[hostname]
-ssh_only = true
-format = "<[$hostname]($style)>"
-trim_at = "-"
-style = "bold dimmed white"
-disabled = false
-
 [python]
 python_binary = ["python3", "python2", "python"]
 style = "blue"
@@ -40,17 +33,16 @@ symbol = ""
 pyenv_version_name = false
 detect_extensions = []
 
+[shell]
+zsh_indicator = ''
+style = 'cyan bold'
+disabled = false
+
 [package]
 disabled = true
-
+ 
 [cmake]
 disabled = true
-
-[custom.bash]
-description = "Display the bash version, if using bash"
-command = 'echo ${BASH_VERSION}'
-when = 'if [ -z ${BASH_VERSION} ]; then exit 1; fi'
-format = '[bash version: ($output )]($style)'
 
 [ruby]
 symbol= '󰴭 '
