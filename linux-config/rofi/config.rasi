@@ -1,4 +1,3 @@
-/* vim:ft=css */
 configuration {
   modi: "window,drun,ssh,combi,run,power-menu:rofi-power-menu";
   font: "Cascadia Code 16";

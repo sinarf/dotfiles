@@ -30,7 +30,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym Mod1+space exec --no-startup-id rofi -show combi
+bindsym Mod1+space exec --no-startup-id rofi -show combi -fuzzy
 bindsym $mod+x exec rofi -show power-menu -modi power-menu:rofi-power-menu
 
 # dropdowm terminal 
@@ -413,7 +413,6 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 
 # systray
 exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id blueman-applet
 
@@ -430,3 +429,5 @@ exec --no-startup-id sleep 10; syncthingtray
 exec --no-startup-id espanso daemon
 
 exec --no-startup-id ${HOME}/.dotfiles/bin/remap_capslock_to_escape.sh
+# Force to switch to the detected layout.
+exec --no-startup-id sleep 5; autoxrandr --change --force

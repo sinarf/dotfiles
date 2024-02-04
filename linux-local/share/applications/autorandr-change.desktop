@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=autorandr --change
+Comment=refresh autorandr
+TryExec=autorandr
+Exec=autorandr --change --force
+Terminal=false
+Type=Application
+Keywords=Text;editor;
+Categories=Utility
+StartupNotify=false

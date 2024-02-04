@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Refresh polybar
+TryExec=polybar
+Exec=refresh_polybar.sh
+Terminal=false
+Type=Application
+Keywords=Text;editor;
+Categories=Utility
+StartupNotify=false

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -eu
+
+main() {
+  local executables
+  executables=$(find "$DOT_FILES/bin" -executable -type f)
+  local script
+  script=$( echo "${executables}" | rofi -dmenu -p "Run DOT_FILES script:")
+  kitty "$script" || notify-send -c error "ERROR: "
+}
+
+main
