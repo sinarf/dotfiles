@@ -1,6 +1,11 @@
 add_newline = true
 command_timeout=3000    # seems long but over a VPN, not that much apprently
 
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[➜](bold red) '
+vimcmd_symbol = '[:](bold blue) '
+
 [[battery.display]]
 threshold = 20
 style = "bold red"
