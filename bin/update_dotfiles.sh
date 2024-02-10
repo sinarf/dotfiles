@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-
 # Update local dotfiles
 
-set -eu  # stop on first error
+set -eu
 
 if [ -z "${DOT_FILES:-}" ]; then
     echo "the DOT_FILES environement variable should be set up for this script to work"
@@ -10,11 +9,21 @@ if [ -z "${DOT_FILES:-}" ]; then
     dot_files=$(dirname "$0")/..
     export DOT_FILES=${dot_files}
 fi
+
+# We want those directory to exists so stow won't link the directory
+# Or because some scripts are expecting to have them
+needed_dirs=(
+  "$HOME"/.local/share/applications
+  "$HOME"/git/sinarf
+)
+for needed_dir in "${needed_dirs[@]}"; do
+  mkdir -pv "$needed_dir"
+done
+
 pulled=false
 echo "Moving to the dotfiles directory: ${DOT_FILES}"
 cd "${DOT_FILES}"
 echo "pulling change from upstream..."
-git fetch -p
 if git pull; then 
   pulled=true
 else
@@ -24,6 +33,7 @@ fi
 echo "Linking dotfiles..."
 stow -v1 --dotfiles all
 stow -v1 --target="${HOME}"/.config all-config
+
 if [[ "$(uname)" == Darwin ]] ; then
   stow -v1 --dotfiles mac
 else
@@ -32,9 +42,7 @@ else
   stow -v1 --target="${HOME}"/.local linux-local
   stow -v1 --target="${HOME}"/.icons linux-icons
 fi
+
 if ${pulled} ; then
   echo "Pushing local modifications..."
-  notify-send "Pushing dotfiles upstream" -i "info"
-else
-  notify-send "Could not push dotfiles upstream" -i "warning"
 fi

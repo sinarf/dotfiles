@@ -68,11 +68,10 @@ sudo usermod --shell /bin/zsh "${USER}"
 sudo groupadd -r autologin
 sudo gpasswd -a "${USER}" autologin
 
+"${DOT_FILES}"/bin/install_bases_software.sh
+
 "${DOT_FILES}/init/install_custom_neovim_config.sh"
 "${DOT_FILES}/init/install_bluetooth.sh"
 
-batch_install_softwares.sh packages.lst
-batch_install_softwares.sh utilities.lst
-batch_install_softwares.sh desktop.lst
 
 echo "Might be a good time to reboot..."
