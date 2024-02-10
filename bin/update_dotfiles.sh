@@ -30,8 +30,11 @@ else
   stow -v1 --dotfiles linux
   stow -v1 --target="${HOME}"/.config linux-config
   stow -v1 --target="${HOME}"/.local linux-local
+  stow -v1 --target="${HOME}"/.icons linux-icons
 fi
 if ${pulled} ; then
   echo "Pushing local modifications..."
-  git push
+  notify-send "Pushing dotfiles upstream" -i "info"
+else
+  notify-send "Could not push dotfiles upstream" -i "warning"
 fi
