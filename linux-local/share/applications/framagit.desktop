@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=FramaGit
+Comment=Open framagit
+TryExec=xdg-open
+Exec=xdg-open https://framagit.org
+Type=Application
+Keywords=Utils;mail
+Icon=mail
+Categories=Utility;
+StartupNotify=false
+
