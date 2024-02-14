@@ -14,6 +14,7 @@ fi
 # Or because some scripts are expecting to have them
 needed_dirs=(
   "$HOME"/.local/share/applications
+  "$HOME"/.icons/
   "$HOME"/git/sinarf
 )
 for needed_dir in "${needed_dirs[@]}"; do
